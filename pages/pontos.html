@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Importação -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/pontos.css" />
+
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/tur.ico"
+      type="image/x-icon"
+    />
+    <!-- Importação do Icone de Hamburguer do menu do Header -->
+    <script
+      src="https://kit.fontawesome.com/e8a034c4b7.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Pontos Turísticos</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="shortcut icon" href="/assets/icons/tur.ico" type="image/x-icon">
-</head>
-<body>
+  </head>
+  <body>
     <header>
+      <div class="header">
         <div class="logo">Partiu!</div>
         <nav>
-          <ul class="nav-list">
+          <ul class="menu">
             <li><a href="#">Destinos</a></li>
             <li><a href="#">Sugestões</a></li>
             <li><a href="#">Sobre Nós</a></li>
             <li><a href="#">Restaurantes</a></li>
           </ul>
         </nav>
-      </header>
-     <figure>
-        <img src="/assets/images/cover.png">
-     </figure>
-</body>
+        <span id="menu-icon" class="fa-solid fa-bars fa-2xl"></span>
+      </div>
+
+      <ul class="dropdown-menu">
+        <li><a href="#">Destinos</a></li>
+        <li><a href="#">Sugestões</a></li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Restaurantes</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <figure>
+        <img src="/assets/images/cover.png" />
+      </figure>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>
