@@ -3,6 +3,7 @@ main {
   background-image: url("/assets/images/index/trilha.png");
   background-attachment: fixed;
   background-size: contain;
+
 }
 .white-color {
   color: #fff;
@@ -84,8 +85,8 @@ main {
 }
 
 .form-search input {
-  width: 65%;
-  height: 30%;
+  width: 30vw;
+  height: 8vh;
   border: 1px solid rgba(51, 51, 51, 0.2);
   border-right: none;
   border-radius: 30px 0 0 30px;
@@ -102,8 +103,8 @@ main {
 }
 
 .form-search button {
-  width: 10%;
-  height: 30%;
+  min-width: 5vw;
+  height: 8vh;
   border-radius: 0 30px 30px 0;
   background-color: rgba(66, 167, 195, 0.8);
   border: none;
@@ -114,6 +115,10 @@ main {
 
 .form-search button:hover {
   cursor: pointer;
+}
+.cta-search{
+    min-width: 40%;
+    width: 80%;
 }
 
 .section-attractions {
@@ -126,7 +131,11 @@ main {
 }
 
 @media only screen and (max-width: 910px) {
-  .section-hero {
+  main{
+    padding: 0;
+    min-width: 560px;
+  }
+    .section-hero {
     flex-direction: column-reverse;
     padding: 0;
   }
@@ -141,4 +150,33 @@ main {
     font-size: 15px;
     width: 100%;
   }
+
+  .section-search{
+    height: 500px;
+    margin-top: 0;
+    align-items: flex-start;
+
+  }
+
+  .form{
+    width:70%;
+  }
+  .form-search input{
+    width: 50vw;
+  height: 8vh;
+  font-size: 2.5vw;
+  }
+  .form-search button{
+    width: 10vw;
+  height: 8vh;
+  }
+
+  .img-search{
+    display: none;
+  }
+  .cta-search{
+    width: 100%;
+}
+
+
 }
