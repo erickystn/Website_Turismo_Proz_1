@@ -68,27 +68,27 @@ ao redor do Brasil!
 <hr/>
 
 ### Home
-<img src="./assets/images/designs/HOME.jpg" width="15%">
+<img src="./assets/images/designs/HOME.jpg" width="25%">
 
 ### Restaurantes
-<img width="15%" src="./assets/images/designs/Restaurantes.png">
+<img width="25%" src="./assets/images/designs/Restaurantes.png">
 
 ### Restaurante
-<img width="15%" src="./assets/images/designs/Restaurante.png">
+<img width="25%" src="./assets/images/designs/Restaurante.png">
 
 ### Pontos Turisticos
-<img width="15%" src="./assets/images/designs/Pontos Turisticos.png">
+<img width="25%" src="./assets/images/designs/Pontos Turisticos.png">
 
 ### Ponto Turistico
-<img width="15%" src="./assets/images/designs/Ponto Turistico.png">
+<img width="25%" src="./assets/images/designs/Ponto Turistico.png">
 
 ### Sugestões
-<img width="15%" src="./assets/images/designs/Sugestoes Form.png">
+<img width="25%" src="./assets/images/designs/Sugestoes Form.png">
 
 ### Pesquisa
-<img width="15%" src="./assets/images/designs/Pesquisa Result.png">
+<img width="25%" src="./assets/images/designs/Pesquisa Result.png">
 
 ### Sobre Nós
-<img width="15%" src="./assets/images/designs/Sobre Nos.png">
+<img width="25%" src="./assets/images/designs/Sobre Nos.png">
 
 
