@@ -24,11 +24,11 @@ a {
 
 /* ESTILO PARA TELAS GRANDES */
 header {
-  background: rgb(66, 167, 195);
+  background: rgb(226, 246, 252);
   background: linear-gradient(
     180deg,
-    rgba(66, 167, 195, 0.3) 0%,
-    rgba(255, 255, 255, 1) 30%
+    rgba(226, 246, 252, 1) 0%,
+    rgba(255, 255, 255, 1) 80%
   );
 }
 
@@ -59,11 +59,11 @@ header {
 }
 
 footer {
-  background: rgb(66, 167, 195);
+  background: rgb(226, 246, 252);
   background: linear-gradient(
     0deg,
-    rgba(66, 167, 195, 0.3) 0%,
-    rgba(255, 255, 255, 1) 30%
+    rgba(226, 246, 252, 1) 0%,
+    rgba(255, 255, 255, 1) 80%
   );
   width: 100%;
 }
