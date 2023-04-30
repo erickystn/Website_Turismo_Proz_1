@@ -328,7 +328,7 @@ font-size: clamp(10px, 1vw, 16px);
 
 .card{
   width: 25%;
-  height: 30vw;
+  height: 28vw;
 }
 
 .cards-restaurants div:nth-child(4){
@@ -337,7 +337,7 @@ font-size: clamp(10px, 1vw, 16px);
 
 .card-restaurant{
   width: 25%;
-  height: 30vw;
+  height: 28vw;
 }
 
 }
