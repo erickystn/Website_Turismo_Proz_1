@@ -328,7 +328,7 @@ font-size: clamp(10px, 1vw, 16px);
 
 .card{
   width: 25%;
-  height: 35vw;
+  height: 30vw;
 }
 
 .cards-restaurants div:nth-child(4){
@@ -337,7 +337,7 @@ font-size: clamp(10px, 1vw, 16px);
 
 .card-restaurant{
   width: 25%;
-  height: 35vw;
+  height: 30vw;
 }
 
 }
@@ -429,6 +429,33 @@ flex-direction: column;
 
 
 }
+
+.state-attraction{
+  font-size: 12px;
+
+}
+.title-attraction{
+  font-size: 16px;
+}
+.description-attraction{
+  font-size: 12px;
+}
+
+.state-restaurant{
+  font-size: 12px;
+}
+
+.title-restaurant{
+  font-size: 16px;
+}
+
+.description-restaurant{
+  font-size: 12px;
+}
+
+
+
+
 
 /* CSS MOBILE CTA */
 .section-cta {
