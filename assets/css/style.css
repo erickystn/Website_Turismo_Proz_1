@@ -8,6 +8,10 @@
   transition: all 0.5s ease-in-out;
 }
 
+body{
+  display: none;
+}
+
 :root {
   --primary-color: 66, 167, 195;
   --secondary-color: 51, 51, 51;
