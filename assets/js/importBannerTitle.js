@@ -1,1 +1,0 @@
-fetch("../../pages/banner-title.html").then((resp) => resp.text()).then((html) => { document.querySelector("#banner-title-section").innerHTML = html;})
