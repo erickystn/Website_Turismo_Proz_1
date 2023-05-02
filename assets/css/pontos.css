@@ -72,40 +72,53 @@ input:focus {
   columns: #333;
 }
 
-/* [3] CARDS: [TRABALHANDO NA IMPLEMENTAÇÃO DA PAGINAÇÃO!]*/
-
+/* [3] CARDS: */
+.cards {
+  border: 0px dashed salmon;
+  display: flex;
+      justify-content: center;
+      flex-wrap: wrap;       
+}
 .card { 
   background-color: rgba(var(--secondary-color), 0.1);
+      width: 300px;
       max-width: 300px;
-      height: 500px;
-      padding: 8px;
-      margin: 20px auto;
+      height: 480px;
+      padding: 12px;
+      margin: 20px;
       overflow: hidden;
       border-radius: 14px;
       box-shadow: 5px 0px 5px -2px rgba(51, 51, 51, 0.63);
+      position: relative;
 }
 
 .card img {
   object-fit: cover;
   width: 100%;
   height: 200px;
-  border-radius: 5px;
+  border-radius: 0px;
   margin-bottom: 10px;
 }
 
 .card-caption {
-  padding-top: 20px;
+  padding-top: 0px;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 14px;
+  border: 0px solid green;
+  height: 180px;
 }
 
 .card-title {
   padding-bottom: 20px;
+  font-size: 18px;
 }
 
-.card button {
+.card-button {
   background: rgb(var(--primary-color));
-      margin: 60px 30%;
+      /* margin: 40px 30%;
+      min-width: 100px;
+      white-space: nowrap; */
+  min-width: 120px;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -113,16 +126,102 @@ input:focus {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   
-  /* position: absolute;
-  top: 86%;
-  right: 35%; */
+  
+  position: absolute;
+  bottom: 40px; 
+  right: 32%; 
 }
-
 
 .card button:hover {
   background-color: #555;
 }
 
+/* [4] PAGINAÇÃO DA PÁGINA: */
+.container-pagination {
+  display: flex;
+  justify-content: center;  
+  border: 0px dashed green;
+  margin-bottom: ;
+}
+.pagination {
+  display: inline-block;
+  background-color: #F7F9FF;
+  width: 330px;
+ 
+  border-radius: 50px;
+  border: 0px dashed #333;
+  padding: 10px 0px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+}
+
+.pagination a {
+  color: #656565;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #42A7C3;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+/* [5] CALL TO ACTION: */
+.container-call {
+  border: 0px dashed rgb(38, 255, 0); 
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-call {
+  max-width: 100%;  
+  height: 420px;  
+  margin: 0px 14%;
+  border: 0px solid orange;
+}
+
+.container-call img {
+  height: 100%;
+}
+
+.container-left {
+  position: absolute;
+  background-color: #6565657b;
+  /* max-width: 38%; */
+  min-width: 40%;
+  border: 0px solid purple;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+      justify-content: center;
+      align-items: center;
+  font-weight: bold;
+}
+
+.left-content {
+  color: #fff;
+  margin: 0px 80px 0px;
+  font-size: 1.6rem; /*2.1vw*/
+  transition: font-size 1s ease-in-out;
+
+  text-align: left;
+  line-height: 1.5;
+  border: 0px dashed darkblue;
+  width: 200px;
+  min-width: 200px;
+  height: 320px;
+  overflow: hidden;
+}
 
 /*CONFIGURAÇÕES PARA TELAS DE MOBILE: */
 @media only screen and (max-width: 910px) {
@@ -134,10 +233,41 @@ input:focus {
       border-radius: 0px;
       padding: 10px;
   }
+  
   form {
       padding: 40px 30px;
   }
   .input-container {
       width: 100%;
   }
+
+  .container-call {
+      flex-direction: column;
+      align-items: center;
+     
+      margin: 20px 0px;
+    }
+    
+    .banner-call {
+      width: 70%;   
+      /* margin: 0px 0px; */
+    }
+    
+    .container-left {
+      max-width: 100%;
+      height: 30%;
+      position: absolute;
+      top: 70%;
+      /* overflow: hidden; */
+    }
+    .left-content {
+      font-size: 1rem; /*2.1vw*/
+      text-align: center;
+      width: 100%;
+      height: auto;
+      margin: 10px 10px 10px 10px;
+    }
+
 }
+
+

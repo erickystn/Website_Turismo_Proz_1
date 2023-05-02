@@ -8,3 +8,7 @@ fetch("../../pages/footer.html")
   .then((html) => {
     document.querySelector("footer").innerHTML = html;
   });
+
+  setTimeout(function() {
+    document.getElementsByTagName("body")[0].style.display = "block";
+  }, 600);
