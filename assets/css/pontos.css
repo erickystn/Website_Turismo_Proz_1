@@ -141,7 +141,7 @@ input:focus {
   display: flex;
   justify-content: center;  
   border: 0px dashed green;
-  margin-bottom: ;
+  margin-bottom: 20px;
 }
 .pagination {
   display: inline-block;
