@@ -13,4 +13,3 @@ fetch("../../pages/footer.html")
 setTimeout(function () {
   document.getElementsByTagName("body")[0].style.display = "block";
 }, 600);
-
