@@ -9,7 +9,8 @@ figure img {
   height: 200px;
   object-fit: cover;
 }
-.caption {
+
+.banner-caption {
   display: flex;
       justify-content: center;
       align-items: center;
