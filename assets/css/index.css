@@ -5,6 +5,7 @@ main {
   background-attachment: fixed;
   background-size: contain;
 }
+
 .white-color {
   color: #fff;
 }
@@ -106,7 +107,7 @@ main {
 }
 
 .form-search > input:focus {
-  border: 3px solid rgb(66, 167, 195);
+  border: 3px solid rgb(var(--primary-color));
   border-right: none;
 }
 
