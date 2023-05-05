@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="UTF-8" />
+
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/restaurantes.css">
+        <script src="https://kit.fontawesome.com/e8a034c4b7.js" crossorigin="anonymous"></script>
+        <script src="../assets/js/importHeaderFooter.js"></script>
+        <title>PARTIU! | Restaurantes</title>
+    </head>
+    <body>
+        <header></header> <!-- [1] AREA DO CABEÇALHO - Status: COMPONENTIZADA -->
+        <main>            <!-- [2] AREA PRINCIPAL -->
+            <!-- [2.1] BANNER E LEGENDA -->
+            <!-- DESCRIÇÃO: Consiste num banner com legenda da página em questão. -->
+            <figure class="banner-container">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+                <figcaption class="banner-caption">Restaurantes</figcaption>
+            </figure>
+
+            <!-- [2.2] BARRA DE BUSCA -->
+            <!-- DESCRIÇÃO: Consiste numa barra que visa fazer a filtragem de algum restaurante específico que o usuário desejar -->
+            <form>
+                <div class="input-container">
+                    <input type="text" name="search" placeholder="Procure pelo seu próximo destino de viagem ou próximo prato...">
+                    <button class="search"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+
+            <!-- [2.3] SESSÃO DE CARDS: -->
+            <!-- DESCRIÇÃO: Consiste numa seção com paginação contendo CARDS de restaurantes.-->
+            <div class="cards">
+                <!-- CARD 01 -->
+                <figure class="card">
+                    <img src="/assets/images/restaurantes/hamburguer.jpg" alt="Hamburguer">
+                    <figcaption class="card-caption">
+                        <h2 class="card-title">Fornada Maluca</h2>
+                        <p>O melhor Hamburguer da região galinácea! Os lanches e petiscos de mais alto padrão de sabor...</p>
+                    </figcaption>
+                    <button class="card-button">Saiba mais</button>
+                </figure>
+                <!-- Descrição: Cada "card" irá ter uma (i) imagem, (ii) descrição, e (iii) botão de saiba mais sobre aquele restaurante, e esse padrão se repete em todos os cards. -->
+
+                <!-- Card 02 -->
+                <figure class="card">
+                    <img src="/assets/images/restaurantes/hamburguer.jpg" alt="Hamburguer">
+                    <figcaption class="card-caption">
+                        <h2 class="card-title">Fornada Maluca</h2>
+                        <p>O melhor Hamburguer da região galinácea! Os lanches e petiscos de mais alto padrão de sabor...</p>
+                    </figcaption>
+                    <button class="card-button">Saiba mais</button>
+                </figure>
+                <!-- Card 03 -->
+                <figure class="card">
+                    <img src="/assets/images/restaurantes/hamburguer.jpg" alt="Hamburguer">
+                    <figcaption class="card-caption">
+                        <h2 class="card-title">Fornada Maluca</h2>
+                        <p>O melhor Hamburguer da região galinácea! Os lanches e petiscos de mais alto padrão de sabor...</p>
+                    </figcaption>
+                    <button class="card-button">Saiba mais</button>
+                </figure>
+                <!-- Card 04 -->
+                <figure class="card">
+                    <img src="/assets/images/restaurantes/hamburguer.jpg" alt="Hamburguer">
+                    <figcaption class="card-caption">
+                        <h2 class="card-title">Fornada Maluca</h2>
+                        <p>O melhor Hamburguer da região galinácea! Os lanches e petiscos de mais alto padrão de sabor...</p>
+                    </figcaption>
+                    <button class="card-button">Saiba mais</button>
+                </figure>
+                <!-- Card 05 -->
+                <figure class="card">
+                    <img src="/assets/images/restaurantes/hamburguer.jpg" alt="Hamburguer">
+                    <figcaption class="card-caption">
+                        <h2 class="card-title">Fornada Maluca</h2>
+                        <p>O melhor Hamburguer da região galinácea! Os lanches e petiscos de mais alto padrão de sabor...</p>
+                    </figcaption>
+                    <button class="card-button">Saiba mais</button>
+                </figure>
+                <!-- Card 06 -->
+                <figure class="card">
+                    <img src="/assets/images/restaurantes/hamburguer.jpg" alt="Hamburguer">
+                    <figcaption class="card-caption">
+                        <h2 class="card-title">Fornada Maluca</h2>
+                        <p>O melhor Hamburguer da região galinácea! Os lanches e petiscos de mais alto padrão de sabor...</p>
+                    </figcaption>
+                    <button class="card-button">Saiba mais</button>
+                </figure>
+                <!-- Card 07 -->
+                <figure class="card">
+                    <img src="/assets/images/restaurantes/hamburguer.jpg" alt="Hamburguer">
+                    <figcaption class="card-caption">
+                        <h2 class="card-title">Fornada Maluca</h2>
+                        <p>O melhor Hamburguer da região galinácea! Os lanches e petiscos de mais alto padrão de sabor...</p>
+                    </figcaption>
+                    <button class="card-button">Saiba mais</button>
+                </figure>
+            <!-- Card 08 -->
+            <figure class="card">
+                    <img src="/assets/images/restaurantes/hamburguer.jpg" alt="Hamburguer">
+                    <figcaption class="card-caption">
+                        <h2 class="card-title">Fornada Maluca</h2>
+                        <p>O melhor Hamburguer da região galinácea! Os lanches e petiscos de mais alto padrão de sabor...</p>
+                    </figcaption>
+                    <button class="card-button">Saiba mais</button>
+                </figure>
+
+            </div>
+
+            <!-- [2.4] PAGINAÇÃO: -->
+            <!-- DESCRIÇÃO: Estamos buscando alternativas de implementação usando o SWIPER JS. -->
+            <div class="container-pagination">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div>
+
+            <!-- [2.5] CALL TO ACTION (Chamada para AÇÃO de alguma coisa): -->
+            <div class="container-call">
+                <figure class="banner-call">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                    <div class="container-left">
+                        <p class="left-content">Saboreie o melhor da gastronomia local em sua viagem com nossas indicações de restaurantes.</p>
+                    </div>
+                </figure>
+            </div>
+        </main>
+        <footer></footer> <!-- [3] AREA DO RODAPÉ - Status: COMPONENTIZADA -->
+        
+    </body>
+</html>
