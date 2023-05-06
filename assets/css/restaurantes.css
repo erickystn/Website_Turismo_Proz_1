@@ -194,6 +194,7 @@ input:focus {
 }
 
 .container-left {
+  margin: 0px 14%;
   position: absolute;
   background-color: #6565657b;
   /* max-width: 38%; */
