@@ -1,274 +1,235 @@
-/* [1] CONFIGURAÇÃO DO BANNER E LEGENDA: */
-figure {
-  display: inline-block;
+/* ------------------------------------------------------ */
+/* --- ESTILO CSS DA AREA PRINCIPAL (VERSÃO: DESKTOP) --- */
+/* ------------------------------------------------------ */
+
+/* [2] AREA PRINCIPAL: */
+main {
+  border: 0px dashed red;
+}
+/* [2.1] - CONFIGURAÇÕES do BANNER E LEGENDA: */
+.banner-container {
+  display: flex;
+      flex-direction: column;     /* Disposição dos ELEMENTOS no EIXO Y: COLUMN or ROW */
+      align-items: center;        /* Alinhamento dos ELEMENTOS no EIXO Y: s-c-e */
+      gap: 20px;                  /* Define um espaço de 20px entre cada coluna */
+  border: 1px dashed #333;      /* Define uma borda */
   position: relative;
-  width: 100%;
-}
-figure img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.banner-caption {
-  display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.5 ease-in-out;
-
-  background: rgb(var(--primary-color));
-      color: #fff;
-      text-align: center;
-      font-size: 1.5em;
-      font-weight: bold;
-      white-space: nowrap;
-      border-radius: 0px 0px 30px 30px;
-      padding: 20px 30px;
-  position: absolute;
-      top: 90%;
-      left: 50%;
-      transform: translatex(-50%);
-}
-
-/* [2] BUSCA DA PÁGINA: */
-form {
-  display: flex;
-      justify-content: center;
-      transition: all 0.5 ease-in-out;
-  background-color: transparent;
-      padding: 80px 0px;
-}
-.input-container {
-  position: relative;
-  border: 1px solid #333;
-  width: 40%;
-  
-  padding: 0px;
-  border-radius: 50px;
-  transition: all 0.5 ease-in-out;
-  box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
-}
-input {
-  border: 0px dashed #333;
-  padding: 16px;
-  width: 100%;
-  height: 60px;
-  border-radius: 50px;
-}
-input:focus {
-  outline: none;
-} 
-.search {
-  position: absolute;
-  top: 0px;
-  right: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 0px 50px 50px 0px;
-  background-color: #fff;
-  border: 0px solid #fff;
-}
-.fa-search {
-  font-size: 20px;
-  columns: #333;
-}
-
-/* [3] CARDS: */
-.cards {
-  border: 0px dashed salmon;
-  display: flex;
-      justify-content: center;
-      flex-wrap: wrap;       
-}
-.card { 
-  background-color: rgba(var(--secondary-color), 0.1);
-      width: 300px;
-      max-width: 300px;
-      height: 480px;
-      padding: 12px;
-      margin: 20px;
-      overflow: hidden;
-      border-radius: 14px;
-      box-shadow: 5px 0px 5px -2px rgba(51, 51, 51, 0.63);
-      position: relative;
-}
-
-.card img {
-  object-fit: cover;
-  width: 100%;
-  height: 200px;
-  border-radius: 0px;
   margin-bottom: 10px;
 }
 
-.card-caption {
-  padding-top: 0px;
-  text-align: justify;
-  font-size: 14px;
-  border: 0px solid green;
-  height: 180px;
+.banner-container img {
+  border: 1px solid #333;   
+      object-fit: cover;         /* Define o ajuste da imagem dentro do ELEMENTO pai */
+      width: 100%;               /* LARgura */    
+      height: 200px;             /* ALTura */ 
 }
 
-.card-title {
-  padding-bottom: 20px;
-  font-size: 18px;
+.banner-caption {
+  background-color: var(--primary-color);   /* Cor de Fundo */
+      border: 1px dashed #333;
+      padding: 20px 30px;                   /* Espaçamento INTERNO*/
+      border-radius: 0px 0px 30px 30px;     /* Define o arredondamento das Bordas */
+      width: 24%;                           /* Define a largura do elemento */
+      min-width: 200px;                      /*Define a largura MÍNIMA do elemento */
+      max-width: 400px;                    /*  Define a largura MÁXIMA do elemento */
+
+      color: #fff;                        /* Cor do Texto */
+      text-align: center;                   /* Alinhamento de texto */
+      font-size: 1.5vw;                     /* Tamanho da Fonte */
+      font-weight: bold;                    /* Peso da Fonte */
+      white-space: nowrap;                  /* Controla o comportamento da quebra de linha */
+  position: absolute;                       /* Posição do elemento em relação ao pai */
+      top: 90%;
+      left: 50%;
+      transform: translatex(-50%);         /* Usado para aplicar transformações no elemento */
 }
 
-.card-button {
-  background: rgb(var(--primary-color));
-      /* margin: 40px 30%;
-      min-width: 100px;
-      white-space: nowrap; */
-  min-width: 120px;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  
-  
-  position: absolute;
-  bottom: 40px; 
-  right: 32%; 
-}
+/* [2.2] - CONFIGURAÇÕES da BARRA DE BUSCA: */
+  .input-container {
+      border: 1px dashed #333;
+      background-color: transparent;
+      width: 100%;
+      height: 200px;
+      display: flex;
+          justify-content: center;
+          align-items: center;
+  }
+  .search-bar_btn {
+      border: 0px dashed #333;
+      width: 40%;
+      display: flex;
+      
+  }
 
-.card button:hover {
-  background-color: #555;
-}
+  .bar_input {
+      border: 1px solid var(--secondary-color);
+      padding: 16px;
+      width: 100%;
+      height: 60px;
+      border-radius: 50px 0px 0px 50px;
+      box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+    }
 
-/* [4] PAGINAÇÃO DA PÁGINA: */
-.container-pagination {
+    .btn_search {
+      width: 60px;
+      height: 60px;
+      border-radius: 0px 50px 50px 0px;
+      background-color: #fff;
+      border: 1px solid var(--secondary-color);
+      box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .fa-search {
+      font-size: 20px;
+      columns: #333;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+/* [2.3] - CONFIGURAÇÕES do SLIDER DE PAGINAÇÃO: */
+.container {
+  max-width: 1200px;
+  margin: 10px auto;
+  border: 1px dashed #333;
   display: flex;
-  justify-content: center;  
-  border: 0px dashed green;
-  margin-bottom: 20px;
+      flex-direction: column;
+      align-items: center;
 }
-.pagination {
-  display: inline-block;
-  background-color: #F7F9FF;
-  width: 330px;
- 
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 27%));
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item .img img {
+  height: 200px;
+  transition: 0.5s;
+}
+
+.item .img {
+  background-image: linear-gradient(to top right, #ccc, #E9F8FC);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.item .content {
+  background-image: linear-gradient(to top right, #ccc, #E9F8FC);
+  border-radius: 30px;
+  padding: 50px 30px;
+  transform: translate(0, -50px);
+  backdrop-filter: blur(20px);
+  color: #333;
+}
+
+.title {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.item .content .des {
+  opacity: .7;
+  margin: 10px 0;
+}
+
+.item .content .price {
+  font-size: large;
+  letter-spacing: 3px;
+  margin: 20px 0px;
+  height: 6px;
+  background: #c5c5c5;
+}
+
+.item .content .add {
+  background-color: #42a7c3;
+  padding: 20px;
+  color: #fff;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+}
+
+.item:hover img {
+  transform: translate(0, -50px);
+  /* transform: translate(0, -50px) scale(1.2); */
+}
+
+/* [2.3.1] CONTAINER DE PAGINAÇÃO: */
+.listPage {
+  display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px;
+  text-align: center;
+  list-style: none;
+  border: 1px dashed #333;
+  min-width: none;
+  min-height: 50px;
   border-radius: 50px;
-  border: 0px dashed #333;
-  padding: 10px 0px;
+  background-color: #F7F9FF;
   box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
 }
 
-.pagination a {
-  color: #656565;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
+.listPage li {
+  background-color: transparent;
+  padding: 10px 14px;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 12%;
+  height: 40px;
+  color: #333;
 }
 
-.pagination a.active {
-  background-color: #42A7C3;
-  color: white;
-  border-radius: 5px;
-}
-
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
-  border-radius: 5px;
-}
-
-/* [5] CALL TO ACTION: */
-.container-call {
-  border: 0px dashed rgb(38, 255, 0); 
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.banner-call {
-  max-width: 100%;  
-  height: 420px;  
-  margin: 0px 14%;
-  border: 0px solid orange;
-}
-
-.container-call img {
-  height: 100%;
-}
-
-.container-left {
-  position: absolute;
-  background-color: #6565657b;
-  /* max-width: 38%; */
-  min-width: 40%;
-  border: 0px solid purple;
-  top: 0;
-  right: 0;
-  height: 100%;
-  display: flex;
-      justify-content: center;
-      align-items: center;
-  font-weight: bold;
-}
-
-.left-content {
+.listPage li:not(.active):hover {
+  background-color: #ccc;
   color: #fff;
-  margin: 0px 80px 0px;
-  font-size: 1.6rem; /*2.1vw*/
-  transition: font-size 1s ease-in-out;
-
-  text-align: left;
-  line-height: 1.5;
-  border: 0px dashed darkblue;
-  width: 200px;
-  min-width: 200px;
-  height: 320px;
-  overflow: hidden;
 }
 
-/*CONFIGURAÇÕES PARA TELAS DE MOBILE: */
+
+.listPage .active {
+  background-color: #42a7c3;
+  color: #fff;
+}
+
+/* ------------------------------------------------------ */
+/* --- ESTILO CSS DA AREA PRINCIPAL (VERSÃO: MOBILE) --- */
+/* ------------------------------------------------------ */
+
 @media only screen and (max-width: 910px) {
-  .caption { /* LEGENDA DO BANNER */
-      font-size: 1.2em;
-      top: 77%;
-      left: 50%;
-      width: 100%;
-      border-radius: 0px;
-      padding: 10px;
-  }
-  
-  form {
-      padding: 40px 30px;
-  }
-  .input-container {
-      width: 100%;
+/* [2] AREA PRINCIPAL: */
+
+  /* [2.1] - CONFIGURAÇÕES do BANNER E LEGENDA: */
+  .banner-caption {
+      font-size: 1.2em;                      /* Tamanho da Fonte */       
+          top: 78%;
+          left: 50%;
+      width: 100%;                           /* Define a largura do elemento */
+          min-width: 100%;                   /* Define a largura MÍNIMA do elemento */
+          max-width: 400px;                  /* Define a largura MÁXIMA do elemento */
+      border-radius: 0px;                    /* Define o arredondamento das Bordas */
+      padding: 10px;                         /* Espaçamento INTERNO*/
   }
 
-  .container-call {
-      flex-direction: column;
-      align-items: center;
-     
-      margin: 20px 0px;
-    }
-    
-    .banner-call {
-      width: 70%;   
-      /* margin: 0px 0px; */
-    }
-    
-    .container-left {
-      max-width: 100%;
-      height: 30%;
-      position: absolute;
-      top: 70%;
-      /* overflow: hidden; */
-    }
-    .left-content {
-      font-size: 1rem; /*2.1vw*/
-      text-align: center;
+ /* [2.2] - CONFIGURAÇÕES da BARRA DE BUSCA: */
+  .search-bar_btn {
       width: 100%;
-      height: auto;
-      margin: 10px 10px 10px 10px;
-    }
+      padding: 0px 40px;
+  }
 
+  .bar_input {
+      min-width: 170px; 
+      height: 54px;   
+  }
+
+  .btn_search {
+      height: 54px;
+  }
 }
-
-
