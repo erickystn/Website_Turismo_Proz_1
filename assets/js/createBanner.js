@@ -1,5 +1,5 @@
 const createBANNER= (imgSrc, captionText, containerBox) => {
-    fetch("/pages/componentes/banner.html")
+    fetch("/pages/components/banner.html")
       .then((response) => response.text())
       .then((html) => {
         const range = document.createRange();
@@ -8,7 +8,7 @@ const createBANNER= (imgSrc, captionText, containerBox) => {
         img.src = imgSrc;
         const caption = fragment.querySelector(".banner-caption");
         caption.textContent = captionText;
-  
+
         const container = document.querySelector(containerBox);
         container.appendChild(fragment.querySelector('.banner-container'));
       });

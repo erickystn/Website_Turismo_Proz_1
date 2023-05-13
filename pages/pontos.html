@@ -1,197 +1,283 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PARTIU | PONTOS TURÍSTICOS</title>
-    <link rel="stylesheet" href="/assets/css/style.css">  <!-- 1. CSS Geral -->
-    <link rel="stylesheet" href="/assets/css/pontos.css"> <!-- 2. CSS Específico-->
-    <script src="/assets//js/createHEADFOOT.js"></script> <!-- 3. Footer e Header -->
-    <script src="/assets/js/createBANNER.js"></script>    <!-- 4. Banner e Legenda -->
-    <script src="/assets/js/createBUSCA.js"></script>     <!-- 5. Campo de Busca -->
-    <script src="/assets/js/createCTA.js"></script>       <!-- 6. Call to Act -->
-    <script 
-        src="https://kit.fontawesome.com/e8a034c4b7.js" 
-        crossorigin="anonymous">
-    </script> <!-- 7. Importação de Icones -->
-</head>
-<body>
-    <header></header>  <!-- [1] CABEÇALHO: --> 
-    <main>             <!-- [2] PRINCIPAL: -->
-        <!-- [2.1] - BANNER E LEGENDA -->
-        <div class="container-banner-caption"></div>
-        <!-- [2.2] - BARRA DE BUSCA -->
-        <div class="container-search-bar"></div>
-        <!-- [2.3] - SEÇÃO DE CARDS PAGINADAS : /!\ -->
-        <div class="container-cards">
-            <div class="swipper">
-                <div class="card"><!-- CARD [01] -->
-                    <div class="card-header"> <!-- 1.1: HEADER Card -->
-                        <img src="/assets/images/pontos-tur/bahia.png" alt="#" class="card-img">
-                    </div>
-                    <div class="card-body">   <!-- 1.2: BODY Card   -->
-                        <h2 class="card-titulo">Bahia</h2> <!-- 1.2.1: Título do Card -->
-                        <p class="card-texto">                       <!-- 1.2.2: Texto do Card -->
-                            Conheça a Bahia, estado encantador do nordeste do Brasil, famoso por suas praias, cultura, culinária e hospitalidade única.
-                        </p>
-                    </div>
-                    <div class="card-footer"> <!-- 1.3: RODAPÉ Card -->
-                        <button class="btn-card"> <!-- 1.3.1: Botão do Card -->
-                            <span>Saiba Mais</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card"><!-- CARD [02] -->
-                    <div class="card-header">
-                        <img src="/assets/images/pontos-tur/rio.png" alt="#" class="card-img">
-                    </div>
-                    <div class="card-body"> 
-                        <h2 class="card-titulo">Rio de janeiro</h2> 
-                        <p class="card-texto">                       
-                            Conheça a bela cidade litorânea do Brasil, famosa por suas praias deslumbrantes, cultura vibrante e monumentos icônicos, como o Cristo Redentor e o Pão de Açúcar.
-                        </p>
-                    </div>
-                    <div class="card-footer"> 
-                        <button class="btn-card">
-                            <span>Saiba Mais</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card"><!-- CARD [03] -->
-                    <div class="card-header">
-                        <img src="/assets/images/pontos-tur/parana.png" alt="#" class="card-img">
-                    </div>
-                    <div class="card-body">  
-                        <h2 class="card-titulo">Paraná</h2> 
-                        <p class="card-texto">                      
-                            Conheça as Cataratas do Iguaçu no Paraná, uma das maiores e mais belas quedas d'água do mundo, e aproveite o turismo ecológico oferecido pelo estado.
-                        </p>
-                    </div>
-                    <div class="card-footer"> 
-                        <button class="btn-card">
-                            <span>Saiba Mais</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card"><!-- CARD [04] -->
-                    <div class="card-header">
-                        <img src="/assets/images/pontos-tur/pernam.png" alt="#" class="card-img">
-                    </div>
-                    <div class="card-body">   
-                        <h2 class="card-titulo">Pernambuco</h2> 
-                        <p class="card-texto">                       
-                            Visite Porto de Galinhas, uma das praias mais famosas do Brasil, e desfrute de suas águas cristalinas, piscinas naturais, areia branca e aconchego nordestino.
-                        </p>
-                    </div>
-                    <div class="card-footer"> 
-                        <button class="btn-card"> 
-                            <span>Saiba Mais</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card"><!-- CARD [05] -->
-                    <div class="card-header">
-                        <img src="/assets/images/pontos-tur/minas.png" alt="#" class="card-img">
-                    </div>
-                    <div class="card-body"> 
-                        <h2 class="card-titulo">Minas Gerais</h2> 
-                        <p class="card-texto">                      
-                            Descubra Ouro Preto, uma das cidades históricas mais encantadoras do Brasil, conhecida por suas igrejas barrocas, ruas de pedra e rica arquitetura colonial.
-                        </p>
-                    </div>
-                    <div class="card-footer"> 
-                        <button class="btn-card"> 
-                            <span>Saiba Mais</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card"><!-- CARD [06] -->
-                    <div class="card-header">
-                        <img src="/assets/images/pontos-tur/amazona.png" alt="#" class="card-img">
-                    </div>
-                    <div class="card-body"> 
-                        <h2 class="card-titulo">Amazonas</h2> 
-                        <p class="card-texto">                      
-                            Conheça Manaus, cidade rica em história e cultura, com atrações turísticas como o famoso Teatro Amazonas e o encontro das águas dos rios Negro e Solimões.
-                        </p>
-                    </div>
-                    <div class="card-footer"> 
-                        <button class="btn-card"> 
-                            <span>Saiba Mais</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card"><!-- CARD [07] -->
-                    <div class="card-header">
-                        <img src="https://source.unsplash.com/random/900×700/?fruit" alt="#" class="card-img">
-                    </div>
-                    <div class="card-body"> 
-                        <h2 class="card-titulo">Lorem Ipsum</h2> 
-                        <p class="card-texto">                      
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum blanditiis facilis, repellendus reprehenderit sapiente voluptate inventore qui distinctio dolor omnis!
-                        </p>
-                    </div>
-                    <div class="card-footer"> 
-                        <button class="btn-card"> 
-                            <span>Saiba Mais</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card"><!-- CARD [08] -->
-                    <div class="card-header">
-                        <img src="https://source.unsplash.com/random/900×700/?trips" alt="#" class="card-img">
-                    </div>
-                    <div class="card-body"> 
-                        <h2 class="card-titulo">Lorem Ipsum</h2> 
-                        <p class="card-texto">                      
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum blanditiis facilis, repellendus reprehenderit sapiente voluptate inventore qui distinctio dolor omnis!
-                        </p>
-                    </div>
-                    <div class="card-footer"> 
-                        <button class="btn-card"> 
-                            <span>Saiba Mais</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card"><!-- CARD [09] -->
-                    <div class="card-header">
-                        <img src="https://source.unsplash.com/random/900×700/?games" alt="#" class="card-img">
-                    </div>
-                    <div class="card-body"> 
-                        <h2 class="card-titulo">Lorem Ipsum</h2> 
-                        <p class="card-texto">                      
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum blanditiis facilis, repellendus reprehenderit sapiente voluptate inventore qui distinctio dolor omnis!
-                        </p>
-                    </div>
-                    <div class="card-footer"> 
-                        <button class="btn-card"> 
-                            <span>Saiba Mais</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>  
-            <div class="swiper-pagination">
-                <img src="/assets/images/pontos-tur/pagin-modelo.png" alt="#">
-            </div>       
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- 1. CSS Geral -->
+    <link rel="stylesheet" href="/assets/css/pontos.css" />
+    <!-- 2. CSS Específico-->
+    <script src="/assets/js/createHeaderFooter.js"></script>
+    <!-- 3. Footer e Header -->
+    <script src="/assets/js/createBanner.js"></script>
+    <!-- 4. Banner e Legenda -->
+    <script src="/assets/js/createBusca.js"></script>
+    <!-- 5. Campo de Busca -->
+    <script src="/assets/js/createCTA.js"></script>
+    <!-- 6. Call to Act -->
+    <script
+      src="https://kit.fontawesome.com/e8a034c4b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 7. Importação de Icones -->
+  </head>
+  <body>
+    <header></header>
+    <!-- [1] CABEÇALHO: -->
+    <main>
+      <!-- [2] PRINCIPAL: -->
+      <!-- [2.1] - BANNER E LEGENDA -->
+      <div class="container-banner-caption"></div>
+      <!-- [2.2] - BARRA DE BUSCA -->
+      <div class="container-search-bar"></div>
+      <!-- [2.3] - SEÇÃO DE CARDS PAGINADAS : /!\ -->
+      <div class="container-cards">
+        <div class="swipper">
+          <div class="card">
+            <!-- CARD [01] -->
+            <div class="card-header">
+              <!-- 1.1: HEADER Card -->
+              <img
+                src="/assets/images/pontos-tur/bahia.png"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <!-- 1.2: BODY Card   -->
+              <h2 class="card-titulo">Bahia</h2>
+              <!-- 1.2.1: Título do Card -->
+              <p class="card-texto">
+                <!-- 1.2.2: Texto do Card -->
+                Conheça a Bahia, estado encantador do nordeste do Brasil, famoso
+                por suas praias, cultura, culinária e hospitalidade única.
+              </p>
+            </div>
+            <div class="card-footer">
+              <!-- 1.3: RODAPÉ Card -->
+              <button class="btn-card">
+                <!-- 1.3.1: Botão do Card -->
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [02] -->
+            <div class="card-header">
+              <img
+                src="/assets/images/pontos-tur/rio.png"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Rio de janeiro</h2>
+              <p class="card-texto">
+                Conheça a bela cidade litorânea do Brasil, famosa por suas
+                praias deslumbrantes, cultura vibrante e monumentos icônicos,
+                como o Cristo Redentor e o Pão de Açúcar.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [03] -->
+            <div class="card-header">
+              <img
+                src="/assets/images/pontos-tur/parana.png"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Paraná</h2>
+              <p class="card-texto">
+                Conheça as Cataratas do Iguaçu no Paraná, uma das maiores e mais
+                belas quedas d'água do mundo, e aproveite o turismo ecológico
+                oferecido pelo estado.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [04] -->
+            <div class="card-header">
+              <img
+                src="/assets/images/pontos-tur/pernam.png"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Pernambuco</h2>
+              <p class="card-texto">
+                Visite Porto de Galinhas, uma das praias mais famosas do Brasil,
+                e desfrute de suas águas cristalinas, piscinas naturais, areia
+                branca e aconchego nordestino.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [05] -->
+            <div class="card-header">
+              <img
+                src="/assets/images/pontos-tur/minas.png"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Minas Gerais</h2>
+              <p class="card-texto">
+                Descubra Ouro Preto, uma das cidades históricas mais
+                encantadoras do Brasil, conhecida por suas igrejas barrocas,
+                ruas de pedra e rica arquitetura colonial.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [06] -->
+            <div class="card-header">
+              <img
+                src="/assets/images/pontos-tur/amazona.png"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Amazonas</h2>
+              <p class="card-texto">
+                Conheça Manaus, cidade rica em história e cultura, com atrações
+                turísticas como o famoso Teatro Amazonas e o encontro das águas
+                dos rios Negro e Solimões.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [07] -->
+            <div class="card-header">
+              <img
+                src="https://source.unsplash.com/random/900×700/?fruit"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Lorem Ipsum</h2>
+              <p class="card-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                blanditiis facilis, repellendus reprehenderit sapiente voluptate
+                inventore qui distinctio dolor omnis!
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [08] -->
+            <div class="card-header">
+              <img
+                src="https://source.unsplash.com/random/900×700/?trips"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Lorem Ipsum</h2>
+              <p class="card-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                blanditiis facilis, repellendus reprehenderit sapiente voluptate
+                inventore qui distinctio dolor omnis!
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [09] -->
+            <div class="card-header">
+              <img
+                src="https://source.unsplash.com/random/900×700/?games"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Lorem Ipsum</h2>
+              <p class="card-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                blanditiis facilis, repellendus reprehenderit sapiente voluptate
+                inventore qui distinctio dolor omnis!
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
         </div>
-        <!-- [2.4] - CTA TURISMO -->
-        <div class="container-cta"></div>
-    </main>      
-    <footer></footer>  <!-- [3] RODAPÉ:    -->  
+        <div class="swiper-pagination">
+          <img src="/assets/images/pontos-tur/pagin-modelo.png" alt="#" />
+        </div>
+      </div>
+      <!-- [2.4] - CTA TURISMO -->
+      <div class="container-cta"></div>
+    </main>
+    <footer></footer>
+    <!-- [3] RODAPÉ:    -->
     <script>
-        createBANNER("/assets/images/pontos-tur/capa-p-turismo.png", "Pontos Turísticos", ".container-banner-caption")
+      createBANNER(
+        "/assets/images/pontos-tur/capa-p-turismo.png",
+        "Pontos Turísticos",
+        ".container-banner-caption"
+      );
 
-        createCTA("/assets/images/pontos-tur/cta-p-turismo.png", "Descubra o próximo lugar incrível para explorar com nossas indicações de viagens.", ".container-cta")
+      createCTA(
+        "/assets/images/pontos-tur/cta-p-turismo.png",
+        "Descubra o próximo lugar incrível para explorar com nossas indicações de viagens.",
+        ".container-cta"
+      );
     </script>
-</body>
+  </body>
 </html>

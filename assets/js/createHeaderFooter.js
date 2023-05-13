@@ -1,10 +1,10 @@
-fetch("/pages/componentes/header.html")
+fetch("/pages/components/header.html")
   .then((response) => response.text())
   .then((html) => {
     document.querySelector("header").innerHTML = html;
   });
 
-fetch("/pages/componentes/footer.html")
+fetch("/pages/components/footer.html")
   .then((response) => response.text())
   .then((html) => {
     document.querySelector("footer").innerHTML = html;
