@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARTIU | Rio de Janeiro</title>
+    <link rel="stylesheet" href="/assets/css/style.css">  <!-- 1. CSS Geral -->
+    <link rel="stylesheet" href="/assets/css/pontos.css"> <!-- 2. CSS Específico-->
+    <link rel="stylesheet" href="/assets/css/anexos.css"> <!-- 3. CSS Específico [2]-->
+    <script src="/assets//js/createHEADFOOT.js"></script> <!-- 4. Footer e Header -->
+    <script src="/assets/js/createBANNER.js"></script>    <!-- 5. Banner e Legenda -->
+    <script 
+        src="https://kit.fontawesome.com/e8a034c4b7.js" 
+        crossorigin="anonymous">
+    </script> <!-- 7. Importação de Icones -->
+</head>
+<body>
+    <header></header>  <!-- [1] CABEÇALHO: --> 
+    <main>             <!-- [2] PRINCIPAL: -->
+        <!-- [2.1] - BANNER E LEGENDA -->
+        <div class="container-banner-caption"></div>
+        <!-- [2.2] - TÍTULO -->
+        <div class="container-modal">
+            <div class="container">
+                <img src="https://www.w3schools.com/howto/img_snow.jpg" alt="#">
+                <img src="/assets/images/pontos-tur/bahia.png" alt="#">
+                <img src="/assets/images/pontos-tur/pernam.png" alt="#">
+            </div>
+        </div>                       
+    </main>      
+    <footer></footer>  <!-- [3] RODAPÉ:    -->  
+    <script>
+        createBANNER("/assets/images/anexos/calcada-rj.png", "Rio de Janeiro", ".container-banner-caption")
+
+        createCTA("/assets/images/pontos-tur/cta-p-turismo.png", "Descubra o próximo lugar incrível para explorar com nossas indicações de viagens.", ".container-cta")
+    </script>
+</body>
+</html>
