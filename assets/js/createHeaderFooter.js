@@ -12,4 +12,4 @@ fetch("/pages/components/footer.html")
 
 setTimeout(function () {
   document.getElementsByTagName("body")[0].style.display = "block";
-}, 600);
+}, 1000);

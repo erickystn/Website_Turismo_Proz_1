@@ -7,41 +7,41 @@
     text-decoration: none;
     transition: all 0.5s ease-in-out;
   }
-  
-  
-  /* body{
+
+
+  body{
     display: none;
-  } */
-  
-  
+  }
+
+
   :root {
     --primary-color: 66, 167, 195;
     --secondary-color: 51, 51, 51;
   }
-  
+
   /* Definindo que todos os links terão a cor padrão */
   a {
     color: #333;
   }
-  
+
   .primary-color {
     color: rgb(66, 167, 195);
   }
-  
+
   .secondary-color {
     color: #333;
   }
-  
+
   /* Ocultando o icone de hamburguer para sites desktop */
   #menu-icon {
     display: none;
   }
-  
+
   /* ocultando o menu menor para sites mobile */
   .dropdown-menu {
     display: none;
   }
-  
+
   /* ESTILO PARA TELAS GRANDES */
   header {
     background: rgb(226, 246, 252);
@@ -53,34 +53,34 @@
     border: 1px dashed #333; /*Zerar ou retirar*/
     margin-bottom: 10px;
   }
-  
+
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 4rem;
     min-height: 5rem;
-    
+
   }
-  
+
   .logo {
     color: #42a7c3;
     font-size: 2.5rem;
     font-weight: bolder;
   }
-  
+
   .menu {
     display: flex;
     justify-content: space-around;
     width: 40rem;
   }
-  
+
   .menu li {
     font-size: large;
     font-weight: bold;
     color: #333;
   }
-  
+
   /* CSS DO FOOTER */
   footer {
     background: rgb(226, 246, 252);
@@ -91,7 +91,7 @@
     );
     width: 100%;
   }
-  
+
   .footer {
     display: flex;
     justify-content: space-between;
@@ -103,13 +103,13 @@
   .project-footer > * {
     margin-bottom: 3px;
   }
-  
+
   .logo-footer {
     color: #42a7c3;
     font-size: 2rem;
     font-weight: bolder;
   }
-  
+
   .about-us-footer {
     display: flex;
     flex-direction: column;
@@ -118,20 +118,20 @@
     text-align: center;
     width: 40%;
   }
-  
+
   .about-us-footer h3 {
     font-size: x-large;
     color: #42a7c3;
     text-shadow: 2px 1px 0px rgba(3, 3, 3, 0.2);
   }
-  
+
   .members-footer {
     display: flex;
     justify-content: space-between;
     margin: 10px;
     border: none;
   }
-  
+
   .members-footer img {
     max-width: 20%;
     min-width: 100px;
@@ -142,59 +142,59 @@
   .members-footer img:hover {
     opacity: 0.7;
   }
-  
+
   .menu-footer {
     padding-top: 30px;
   }
-  
+
   .menu-footer > ul > li {
     padding-top: 5px;
     font-weight: bold;
   }
-  
+
   /* Estilos para sites mobile onde o menu maior é oculto, o hamburguer aparece e
   é definido uma classe para exibir o menu menor que será chamada via js */
-  
+
   @media only screen and (max-width: 910px) {
     #menu-icon {
       display: block;
-  
+
     }
-  
+
     .menu {
       display: none;
     }
-  
+
     .dropdown-menu {
       display: none;
       justify-content: center;
       align-items: center;
     }
-  
+
     .dropdown-menu li {
       padding: 10px 30px;
       font-weight: bolder;
     }
-  
+
     .footer {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
-  
+
       color: #333;
     }
-  
+
     .footer > * {
       margin-top: 20px;
     }
-  
+
     .members-footer {
       flex-wrap: wrap;
       justify-content: center;
     }
-  
+
     .menu-footer {
       display: none;
     }
@@ -208,6 +208,5 @@
       border-left: solid 2px #42a7c3;
     }
   }
-  
-  
-  
+
+
