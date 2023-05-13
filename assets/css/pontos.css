@@ -1,238 +1,333 @@
-/* ------------------------------------------------------ */
-/* --- ESTILO CSS DA AREA PRINCIPAL (VERSÃO: DESKTOP) --- */
-/* ------------------------------------------------------ */
-
-/* [2] AREA PRINCIPAL: */
-main {
-  border: 0px dashed red;
-}
-/* [2.1] - CONFIGURAÇÕES do BANNER E LEGENDA: */
+/* [2.1] BANNER E LEGENDA (CONFIGURAÇÕES): */
 .banner-container {
-  display: flex;
-      flex-direction: column;     /* Disposição dos ELEMENTOS no EIXO Y: COLUMN or ROW */
-      align-items: center;        /* Alinhamento dos ELEMENTOS no EIXO Y: s-c-e */
-      gap: 20px;                  /* Define um espaço de 20px entre cada coluna */
-  border: 1px dashed #333;      /* Define uma borda */
-  position: relative;
-  margin-bottom: 10px;
+    border: 1px dashed #333;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-
 .banner-container img {
-  border: 1px solid #333;   
-      object-fit: cover;         /* Define o ajuste da imagem dentro do ELEMENTO pai */
-      width: 100%;               /* LARgura */    
-      height: 200px;             /* ALTura */ 
+    border: 1px solid #333;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
 }
-
 .banner-caption {
-  background-color: var(--primary-color);   /* Cor de Fundo */
-      border: 1px dashed #333;
-      padding: 20px 30px;                   /* Espaçamento INTERNO*/
-      border-radius: 0px 0px 30px 30px;     /* Define o arredondamento das Bordas */
-      width: 24%;                           /* Define a largura do elemento */
-      min-width: 200px;                      /*Define a largura MÍNIMA do elemento */
-      max-width: 400px;                    /*  Define a largura MÁXIMA do elemento */
-
-      color: #fff;                        /* Cor do Texto */
-      text-align: center;                   /* Alinhamento de texto */
-      font-size: 1.5vw;                     /* Tamanho da Fonte */
-      font-weight: bold;                    /* Peso da Fonte */
-      white-space: nowrap;                  /* Controla o comportamento da quebra de linha */
-  position: absolute;                       /* Posição do elemento em relação ao pai */
-      top: 90%;
-      left: 50%;
-      transform: translatex(-50%);         /* Usado para aplicar transformações no elemento */
-}
-
-/* [2.2] - CONFIGURAÇÕES da BARRA DE BUSCA: */
-  .input-container {
-      border: 1px dashed #333;
-      background-color: transparent;
-      width: 100%;
-      height: 200px;
-      display: flex;
-          justify-content: center;
-          align-items: center;
-  }
-  .search-bar_btn {
-      border: 0px dashed #333;
-      width: 40%;
-      display: flex;
-      
-  }
-
-  .bar_input {
-      border: 1px solid var(--secondary-color);
-      padding: 16px;
-      width: 100%;
-      height: 60px;
-      border-radius: 50px 0px 0px 50px;
-      box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
-    }
-
-    .btn_search {
-      width: 60px;
-      height: 60px;
-      border-radius: 0px 50px 50px 0px;
-      background-color: #fff;
-      border: 1px solid var(--secondary-color);
-      box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
-    }
-
-    .fa-search {
-      font-size: 20px;
-      columns: #333;
-    }
-
-    input:focus {
-      outline: none;
-    }
-
-/* [2.3] - CONFIGURAÇÕES do SLIDER DE PAGINAÇÃO: */
-.container {
-  max-width: 1200px;
-  margin: 10px auto;
-  padding: 0px 0px;
+  background: #42a7c3;
   border: 1px dashed #333;
-  display: flex;
-      flex-direction: column;
-      align-items: center;
-}
-
-.list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 30%)); /*1fr*/
-  column-gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.item .img img {
-  height: 200px;
-  border: 0px dashed #333;
-    border-radius: 8px 8px 0px 0px;
-  transition: 0.5s;
-}
-
-.item .img {
-  background-image: linear-gradient(to top right, #ccc, #E9F8FC);
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-}
-
-.item .content {
-  background-image: linear-gradient(to top right, #ccc, #E9F8FC);
-  border-radius: 30px;
-  padding: 50px 30px;
-  transform: translate(0, -50px);
-  backdrop-filter: blur(20px);
-  color: #333;
-}
-
-.title {
-  font-size: x-large;
-  font-weight: bolder;
-}
-
-.item .content .des {
-  opacity: .7;
-  margin: 10px 0;
-}
-
-.item .content .price {
-  font-size: large;
-  letter-spacing: 3px;
-  margin: 20px 0px;
-  height: 6px;
-  background: #c5c5c5;
-}
-
-.item .content .add {
-  background-color: #42a7c3;
-  padding: 20px;
+  border-radius: 0px 0px 30px 30px;
+  width: 24%;
+  min-width: 200px;
+  max-width: 400px;
   color: #fff;
-  width: 100%;
-  border: none;
-  border-radius: 30px;
-}
-
-.item:hover img {
-  transform: translate(0, -50px);
-  /* transform: translate(0, -50px) scale(1.2); */
-}
-
-/* [2.3.1] CONTAINER DE PAGINAÇÃO: */
-.listPage {
-  display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2px;
   text-align: center;
-  list-style: none;
-  border: 1px dashed #333;
-  min-width: none;
-  min-height: 50px;
-  border-radius: 50px;
-  background-color: #F7F9FF;
-  box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+  font-size: 1.5vw;
+  font-weight: bold;
+  white-space: nowrap;
+  position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.listPage li {
-  background-color: transparent;
-  padding: 10px 14px;
-  display: inline-block;
-  margin: 0 10px;
-  cursor: pointer;
-  border-radius: 12%;
-  height: 40px;
-  color: #333;
+/* [2.2] BARRA DE BUSCA (CONFIGURAÇÕES): */
+.input-container {
+    border: 1px dashed #333;
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
-.listPage li:not(.active):hover {
-  background-color: #ccc;
-  color: #fff;
+.search-bar_btn {
+    border: 0px dashed #333;
+    width: 40%;
+    display: flex;
+    
 }
 
-
-.listPage .active {
-  background-color: #42a7c3;
-  color: #fff;
+.bar_input {
+    border: 1px solid var(--secondary-color);
+    padding: 16px;
+    width: 100%;
+    height: 60px;
+    border-radius: 50px 0px 0px 50px;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
 }
-
-/* ------------------------------------------------------ */
-/* --- ESTILO CSS DA AREA PRINCIPAL (VERSÃO: MOBILE) --- */
-/* ------------------------------------------------------ */
-
-@media only screen and (max-width: 910px) {
-/* [2] AREA PRINCIPAL: */
-
-  /* [2.1] - CONFIGURAÇÕES do BANNER E LEGENDA: */
-  .banner-caption {
-      font-size: 1.2em;                      /* Tamanho da Fonte */       
-          top: 78%;
-          left: 50%;
-      width: 100%;                           /* Define a largura do elemento */
-          min-width: 100%;                   /* Define a largura MÍNIMA do elemento */
-          max-width: 400px;                  /* Define a largura MÁXIMA do elemento */
-      border-radius: 0px;                    /* Define o arredondamento das Bordas */
-      padding: 10px;                         /* Espaçamento INTERNO*/
-  }
-
- /* [2.2] - CONFIGURAÇÕES da BARRA DE BUSCA: */
-  .search-bar_btn {
-      width: 100%;
-      padding: 0px 40px;
-  }
-
-  .bar_input {
-      min-width: 170px; 
-      height: 54px;   
-  }
 
   .btn_search {
-      height: 54px;
-  }
+    width: 60px;
+    height: 60px;
+    border-radius: 0px 50px 50px 0px;
+    background-color: #fff;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+}
+
+  .fa-search {
+    font-size: 20px;
+    columns: #333;
+}
+
+  input:focus {
+    outline: none;
+}
+
+/* [2.3] CARDS CONTAINER (CONFIGURAÇÕES): */
+/* 2.0 Configurações do Card e Container: */
+.container-cards {
+    border: 1px dashed #333;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container-cards .swipper {
+    border: 0px dashed #333;
+    width: 80%;
+    display: flex;  
+    flex-wrap: wrap;
+    gap: 20px;  
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: 1px dashed #333;
+    width: 280px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+.swiper-pagination {
+    border: 0px dashed #333;    
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.swiper-pagination img {   
+    height: 40px;
+    -webkit-user-drag: none;
+}
+
+
+/* .card:hover {
+    transform: scale3d(1.1, 1.1, 1);
+} */
+
+/* 2.1 Configurações do header do card: */
+.card-header {
+    border: 1px solid #333;
+    margin: 0px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img {
+    min-width: none;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.card-header img:hover {
+    transform: scale(1.1);
+}
+
+/* 2.2 Configurações do body do card: */
+.card-body {
+    border: 1px dashed #333;
+    min-height: 160px;
+    padding: 0px 20px;
+    text-align: justify;
+}
+
+.card-titulo {
+    border: 1px dashed #333;
+    font-size: 3.2vh;
+    margin: 10px 0px;
+}
+
+.card-texto {
+    border: 1px dashed #333;
+    font-size: 2.3vh;
+}
+
+/* 2.3 Configurações do Footer do card: */
+.card-footer {
+    border-top: 4px solid #33333357;
+    height: 60px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-card {
+    border: none;
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    background: #3498b3;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* .btn-card:hover {
+background-color: #42a7c3;
+color: #fff; 
+} */
+
+
+/* [2.4] CTA DE TURISMO (CONFIGURAÇÕES): */
+.container-cta {
+    border: 1px dashed #333;
+    position: relative;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-call {
+    max-width: 100%;
+    height: 420px;
+    margin: 0px 14%;
+    border: 0px solid orange;    
+}
+
+.banner-call img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-left {
+    position: absolute;
+    background-color: #6565657b;
+    max-width: 38%;
+    min-width: 40%;
+    top: 0;
+    left: 10;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.left-content {
+    color: #fff;
+    font-size: 1.6rem; 
+    transition: font-size 1s ease-in-out;
+  
+    text-align: left;
+    line-height: 1.5;
+    width: 200px;
+    min-width: 200px;
+    height: 320px;
+    overflow: hidden;
+}
+
+/* ====================================================== */
+@media only screen and (max-width: 800px) {
+/* [2.1] BANNER E LEGENDA (CONFIGURAÇÕES): */
+.banner-caption {
+    font-size: 1.2em;  
+    top: 78%;
+    left: 50%;
+    width: 100%;   
+    min-width: 100%;    
+    max-width: 400px;      
+    border-radius: 0px;       
+    padding: 10px;  
+    }
+
+/* [2.2] - CONFIGURAÇÕES da BARRA DE BUSCA: */
+.search-bar_btn {
+    width: 100%;
+    padding: 0px 40px;
+    }
+
+.bar_input {
+    min-width: 170px; 
+    height: 54px;   
+    }
+
+.btn_search {
+    height: 54px;
+    }
+
+/* [2.3] CARDS CONTAINER (CONFIGURAÇÕES): */
+    .card {
+        width: 260px;
+        height: 410px;
+        gap: 5px;   
+
+      }  
+    .card:hover {
+      transform: none;
+    }
+    
+    .card-header {
+      height: 180px;
+    }
+    
+    .card-body {
+      min-height: none;
+      padding: 0px 10px;
+    }
+    
+    .card-footer {
+      height:56px;
+      margin: 0px;
+    }
+    
+    .btn-card {
+      width: 156px;
+      height: 34px;
+    }
+    
+/* [2.4] CTA DE TURISMO (CONFIGURAÇÕES): */
+.container-call {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+    }
+
+.banner-call {
+    width: 100%;
+    height: 280px;
+    }
+ 
+
+.container-left {
+    max-width: 72%;
+    height: 30%;
+    position: absolute;
+    top: 70%;
+    }
+
+.left-content {
+    font-size: 0.8rem; 
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    }
 }
