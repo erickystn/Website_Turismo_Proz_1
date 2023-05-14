@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <script src="/assets/js/createHeaderFooter.js" defer></script>
     <script src="/assets/js/createCard.js" defer></script>
+      <script src="/assets/js/createBanner.js" ></script>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/restaurantes.css" />
@@ -21,12 +22,7 @@
     <hr />
     <main>
       <!-- [1] BANNER E LEGENDA: -->
-      <figure class="banner-container">
-        <img
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-        />
-        <figcaption class="banner-caption">Restaurantes</figcaption>
-      </figure>
+      <section class="banner"></section>
 
       <!-- [2] BUSCA DA PÁGINA: -->
       <form>
@@ -77,4 +73,13 @@
     <hr />
     <footer></footer>
   </body>
+<script>
+createBanner(
+      "/assets/images/restaurantes/banner-img.jpg",
+      "Restaurantes",
+      ".banner"
+    );
+
+</script>
+
 </html>

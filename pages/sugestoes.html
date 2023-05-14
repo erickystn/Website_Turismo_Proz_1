@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
     <script src="/assets/js/createHeaderFooter.js" defer></script>
-    <script src="/assets/js/createBanner.js" ></script>
+    <script src="/assets/js/createBanner.js"></script>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/sugestoes.css" />
@@ -23,19 +23,21 @@
       <section class="banner"></section>
 
       <div class="form-content">
-        <h2 class="descrition">
+        <h2 class="description">
           Se animou com nosso blog e gostaria de sugerir novos locais? Preencha
           o nosso formulário e veja seu o local aparecer no nosso site.
         </h2>
         <form action="">
-          <fieldset class="field-container">
+          <fieldset >
             <legend>Insira seus dados:</legend>
 
-            <label for="name">Nome: </label>
-            <input type="text" id="name" name="name" />
+            <label for="name"
+              >Nome: <input type="text" id="name" name="name"
+            /></label>
 
-            <label for="email">Email: </label>
-            <input type="text" id="email" name="name" />
+            <label for="email"
+              >Email: <input type="text" id="email" name="name"
+            /></label>
 
             <label for="sugestoes"
               >Sugestões de lugares, restaurantes, etc:</label
@@ -44,19 +46,17 @@
             <textarea
               name="sugestoes"
               id="sugestoes"
-              cols="60"
-              rows="10"
+              
             ></textarea>
 
-            <label for="file">Importar arquivo</label>
-            <input type="file" id="file" name="file" />
+            <label for="file"
+              >Importar arquivo <input type="file" id="file" name="file"
+            /></label>
 
-            <div class="checkbox">
-              <input type="checkbox" id="novidades" name="novidades" />
-              <label for="novidades">
-                Aceito receber notificações e novidades de nosso site.
-              </label>
-            </div>
+            <label for="novidades">
+              <input type="checkbox" id="novidades" name="novidades" />Aceito
+              receber notificações e novidades de nosso site.
+            </label>
           </fieldset>
 
           <input type="submit" value="Enviar" />
