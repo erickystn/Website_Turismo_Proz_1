@@ -1,213 +1,260 @@
 * {
-    margin: 0px;
-    padding: 0;
-    font-family: roboto, sans-serif;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  
-  /* body{
-    display: none;
-  } */
-  
-  
-  :root {
-    --primary-color: 66, 167, 195;
-    --secondary-color: 51, 51, 51;
-  }
-  
-  /* Definindo que todos os links terão a cor padrão */
-  a {
-    color: #333;
-  }
-  
-  .primary-color {
-    color: rgb(66, 167, 195);
-  }
-  
-  .secondary-color {
-    color: #333;
-  }
-  
-  /* Ocultando o icone de hamburguer para sites desktop */
+  margin: 0px;
+  padding: 0;
+  font-family: roboto, sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+body {
+  display: none;
+  min-width: 360px;
+}
+
+:root {
+  --primary-color: 66, 167, 195;
+  --secondary-color: 51, 51, 51;
+}
+
+/* Definindo que todos os links terão a cor padrão */
+a {
+  color: #333;
+}
+
+.primary-color {
+  color: rgb(66, 167, 195);
+}
+
+.secondary-color {
+  color: #333;
+}
+
+/* Ocultando o icone de hamburguer para sites desktop */
+#menu-icon {
+  display: none;
+}
+
+/* ocultando o menu menor para sites mobile */
+.dropdown-menu {
+  display: none;
+}
+
+/* ESTILO PARA TELAS GRANDES */
+header {
+  background: rgb(226, 246, 252);
+  background: linear-gradient(
+    180deg,
+    rgba(226, 246, 252, 1) 0%,
+    rgba(255, 255, 255, 1) 80%
+  );
+  border: 1px dashed #333; /*Zerar ou retirar*/
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+  min-height: 5rem;
+}
+
+.logo {
+  color: #42a7c3;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 40rem;
+}
+
+.menu li {
+  font-size: large;
+  font-weight: bold;
+  color: #333;
+}
+
+/* CSS DO FOOTER */
+footer {
+  background: rgb(226, 246, 252);
+  background: linear-gradient(
+    0deg,
+    rgba(226, 246, 252, 1) 0%,
+    rgba(255, 255, 255, 1) 80%
+  );
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5%;
+  color: #333;
+  border: 1px dashed #333; /*Zerar ou retirar*/
+}
+.project-footer > * {
+  margin-bottom: 3px;
+}
+
+.logo-footer {
+  color: #42a7c3;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.about-us-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+}
+
+.about-us-footer h3 {
+  font-size: x-large;
+  color: #42a7c3;
+  text-shadow: 2px 1px 0px rgba(3, 3, 3, 0.2);
+}
+
+.members-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  border: none;
+}
+
+.members-footer img {
+  max-width: 20%;
+  min-width: 100px;
+  height: auto;
+  padding: 10px;
+  border-radius: 50%;
+}
+.members-footer img:hover {
+  opacity: 0.7;
+}
+
+.menu-footer {
+  padding-top: 30px;
+}
+
+.menu-footer > ul > li {
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+/* CSS do Banner para paginas que usam o Banner */
+.banner-container {
+  border: 1px dashed #333;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.banner-container img {
+  border: 1px solid #333;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+.banner-caption {
+  background: #42a7c3;
+  border: 1px dashed #333;
+  padding: 20px;
+  border-radius: 0px 0px 30px 30px;
+  width: 24%;
+  min-width: 200px;
+  max-width: 400px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5vw;
+  font-weight: bold;
+  white-space: nowrap;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Estilos para sites mobile onde o menu maior é oculto, o hamburguer aparece e
+  é definido uma classe para exibir o menu menor que será chamada via js */
+
+@media only screen and (max-width: 910px) {
   #menu-icon {
+    display: block;
+  }
+
+  .menu {
     display: none;
   }
-  
-  /* ocultando o menu menor para sites mobile */
+
   .dropdown-menu {
     display: none;
-  }
-  
-  /* ESTILO PARA TELAS GRANDES */
-  header {
-    background: rgb(226, 246, 252);
-    background: linear-gradient(
-      180deg,
-      rgba(226, 246, 252, 1) 0%,
-      rgba(255, 255, 255, 1) 80%
-    );
-    border: 1px dashed #333; /*Zerar ou retirar*/
-    margin-bottom: 10px;
-  }
-  
-  .header {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin: 0 4rem;
-    min-height: 5rem;
-    
   }
-  
-  .logo {
-    color: #42a7c3;
-    font-size: 2.5rem;
+
+  .dropdown-menu li {
+    padding: 10px 30px;
     font-weight: bolder;
   }
-  
-  .menu {
-    display: flex;
-    justify-content: space-around;
-    width: 40rem;
-  }
-  
-  .menu li {
-    font-size: large;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* CSS DO FOOTER */
-  footer {
-    background: rgb(226, 246, 252);
-    background: linear-gradient(
-      0deg,
-      rgba(226, 246, 252, 1) 0%,
-      rgba(255, 255, 255, 1) 80%
-    );
-    width: 100%;
-  }
-  
+
   .footer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 5%;
-    color: #333;
-    border: 1px dashed #333; /*Zerar ou retirar*/
-  }
-  .project-footer > * {
-    margin-bottom: 3px;
-  }
-  
-  .logo-footer {
-    color: #42a7c3;
-    font-size: 2rem;
-    font-weight: bolder;
-  }
-  
-  .about-us-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 40%;
+    width: 100%;
+
+    color: #333;
   }
-  
-  .about-us-footer h3 {
-    font-size: x-large;
-    color: #42a7c3;
-    text-shadow: 2px 1px 0px rgba(3, 3, 3, 0.2);
+
+  .footer > * {
+    margin-top: 20px;
   }
-  
+
   .members-footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    border: none;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  
-  .members-footer img {
-    max-width: 20%;
-    min-width: 100px;
-    height: auto;
-    padding: 10px;
-    border-radius: 50%;
-  }
-  .members-footer img:hover {
-    opacity: 0.7;
-  }
-  
+
   .menu-footer {
-    padding-top: 30px;
+    display: none;
   }
-  
-  .menu-footer > ul > li {
-    padding-top: 5px;
-    font-weight: bold;
+  .project-footer {
+    display: flex;
+    align-items: center;
   }
-  
-  /* Estilos para sites mobile onde o menu maior é oculto, o hamburguer aparece e
-  é definido uma classe para exibir o menu menor que será chamada via js */
-  
-  @media only screen and (max-width: 910px) {
-    #menu-icon {
-      display: block;
-  
-    }
-  
-    .menu {
-      display: none;
-    }
-  
-    .dropdown-menu {
-      display: none;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .dropdown-menu li {
-      padding: 10px 30px;
-      font-weight: bolder;
-    }
-  
-    .footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-  
-      color: #333;
-    }
-  
-    .footer > * {
-      margin-top: 20px;
-    }
-  
-    .members-footer {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    .menu-footer {
-      display: none;
-    }
-    .project-footer {
-      display: flex;
-      align-items: center;
-    }
-    .group {
-      margin-left: 4vw;
-      padding-left: 2vw;
-      border-left: solid 2px #42a7c3;
-    }
+  .group {
+    margin-left: 4vw;
+    padding-left: 2vw;
+    border-left: solid 2px #42a7c3;
   }
-  
-  
-  
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner-caption {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-caption {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    justify-content: space-around;
+  }
+}

@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta charset="UTF-8" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <script src="/assets/js/createHeaderFooter.js" defer></script>
+    <script src="/assets/js/createBanner.js"></script>
 
-     <link rel="stylesheet" href="/assets/css/style.css">
-        <link rel="stylesheet" href="/assets/css/sugestoes.css">
-        <script src="https://kit.fontawesome.com/e8a034c4b7.js" crossorigin="anonymous"></script>
-        <script src="../assets/js/importHeaderFooter.js"></script>
-        <title>PARTIU! | SUGESTÕES</title>
-    </head>
-    <body>
-        <header></header>
-        <hr>
-        <main>
-            <div class="form-content">
-                <h2 class="descrition">Se animou com nosso blog e gostaria de sugerir novos locais?
-                    Preencha o nosso formulário e veja seu o local aparecer no nosso site.</h2>
-                <form action="">
-                    <fieldset class="field-container">
-                        <legend>Insira seus dados: </legend>
-                        <label for="name">Nome: </label>
-                        <input type="text" id="name" name="name">
-                        <br><br>
-                        <label for="email">Email: </label>
-                        <input type="text" id="email" name="name">
-                        <br><br>
-                        <label for="sugestoes">Sugestões de lugares, restaurantes, etc:</label>
-                        <br>
-                        <textarea name="sugestoes" id="sugestoes" cols="60" rows="10"></textarea>
-                        <br><br>
-                        <label for="file">Importar arquivo</label>
-                        <input type="file" id="file" name="file">
-                        <br><br>
-                        <div class="checkbox">
-                        <input type="checkbox" id="novidades" name="novidades">
-                        <label for="novidades">Aceito receber notificações e novidades de nosso site.</label>
-                        </div>
-                        </fieldset>
-                        <br>
-                    <input type="submit" value="Enviar">
-                </form>
-            <div>
-        </main>
-        <hr>
-        <footer></footer>
-    </body>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/sugestoes.css" />
+    <script
+      src="https://kit.fontawesome.com/e8a034c4b7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>PARTIU! | SUGESTÕES</title>
+  </head>
+  <body>
+    <header></header>
+    <hr />
+    <main>
+      <section class="banner"></section>
+
+      <div class="form-content">
+        <h2 class="description">
+          Se animou com nosso blog e gostaria de sugerir novos locais? Preencha
+          o nosso formulário e veja seu o local aparecer no nosso site.
+        </h2>
+        <form action="">
+          <fieldset >
+            <legend>Insira seus dados:</legend>
+
+            <label for="name"
+              >Nome: <input type="text" id="name" name="name"
+            /></label>
+
+            <label for="email"
+              >Email: <input type="text" id="email" name="name"
+            /></label>
+
+            <label for="sugestoes"
+              >Sugestões de lugares, restaurantes, etc:</label
+            >
+
+            <textarea
+              name="sugestoes"
+              id="sugestoes"
+              
+            ></textarea>
+
+            <label for="file"
+              >Importar arquivo <input type="file" id="file" name="file"
+            /></label>
+
+            <label for="novidades">
+              <input type="checkbox" id="novidades" name="novidades" />Aceito
+              receber notificações e novidades de nosso site.
+            </label>
+          </fieldset>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+  <script>
+    createBanner(
+      "/assets/images/sugestoes/banner-img.jpg",
+      "Sugestões",
+      ".banner"
+    );
+  </script>
 </html>
