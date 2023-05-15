@@ -1,85 +1,272 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
-    <script src="/assets/js/createHeaderFooter.js" defer></script>
-    <script src="/assets/js/createCard.js" defer></script>
-      <script src="/assets/js/createBanner.js" ></script>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARTIU | RESTAURANTES</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- 1. CSS Geral -->
     <link rel="stylesheet" href="/assets/css/restaurantes.css" />
+    <!-- 2. CSS Específico-->
+    <script src="/assets/js/createHeaderFooter.js" defer></script>
+    <!-- 3. Footer e Header -->
+    <script src="/assets/js/createBanner.js"></script>
+    <!-- 4. Banner e Legenda -->
+    <script src="/assets/js/createBusca.js"></script>
+    <!-- 5. Campo de Busca -->
+    <script src="/assets/js/createCTA.js"></script>
+    <!-- 6. Call to Act -->
     <script
       src="https://kit.fontawesome.com/e8a034c4b7.js"
       crossorigin="anonymous"
     ></script>
-
-    <title>PARTIU! | Restaurantes</title>
+    <!-- 7. Importação de Icones -->
   </head>
   <body>
     <header></header>
-    <hr />
+    <!-- [1] CABEÇALHO: -->
     <main>
-      <!-- [1] BANNER E LEGENDA: -->
-      <section class="banner"></section>
-
-      <!-- [2] BUSCA DA PÁGINA: -->
-      <form>
-        <div class="input-container">
-          <input
-            type="search"
-            name="search"
-            placeholder="Procure pelo seu próximo destino de viagem ou próximo prato..."
-          />
-          <button type="submit" class="search">
-            <i class="fa fa-search"></i>
-          </button>
+      <!-- [2] PRINCIPAL: -->
+      <!-- [2.1] - BANNER E LEGENDA -->
+      <div class="container-banner-caption"></div>
+      <!-- [2.2] - BARRA DE BUSCA -->
+      <div class="container-search-bar"></div>
+      <!-- [2.3] - SEÇÃO DE CARDS PAGINADAS : /!\ -->
+      <div class="container-cards">
+        <div class="swipper">
+          <div class="card">
+            <!-- CARD [01] -->
+            <div class="card-header">
+              <!-- 1.1: HEADER Card -->
+              <img
+                src="https://source.unsplash.com/random/900×700/?comida-quente"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <!-- 1.2: BODY Card   -->
+              <h2 class="card-titulo">Lorem Ipsum</h2>
+              <!-- 1.2.1: Título do Card -->
+              <p class="card-texto">
+                <!-- 1.2.2: Texto do Card -->
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae sequi itaque architecto qui explicabo iste minima sunt sint nostrum vel!
+              </p>
+            </div>
+            <div class="card-footer">
+              <!-- 1.3: RODAPÉ Card -->
+              <button class="btn-card">
+                <!-- 1.3.1: Botão do Card -->
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [02] -->
+            <div class="card-header">
+              <img
+                src="https://source.unsplash.com/random/900×700/?comida-fria"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Lorem Ipsum</h2>
+              <p class="card-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugiat expedita consequatur? Repellendus recusandae exercitationem magni obcaecati enim asperiores quisquam.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card" onclick="window.open('/pages/restaurante.html', '_blank')">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [03] -->
+            <div class="card-header">
+              <img
+                src="https://source.unsplash.com/random/900×700/?pimentas"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Lorem Ipsum</h2>
+              <p class="card-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aperiam maiores repellat culpa rerum omnis consectetur cumque autem illo tempora.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [04] -->
+            <div class="card-header">
+              <img
+                src="https://source.unsplash.com/random/900×700/?frutas"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Lorem Ipsum</h2>
+              <p class="card-texto">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quasi alias culpa at aut maiores corrupti necessitatibus delectus. Iste, repudiandae.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [05] -->
+            <div class="card-header">
+              <img
+                src="https://source.unsplash.com/random/900×700/?comida-minas"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Lorem Ipsum</h2>
+              <p class="card-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus excepturi odio accusamus eos quaerat reprehenderit exercitationem dolore ex ullam?
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [06] -->
+            <div class="card-header">
+              <img
+                src="https://source.unsplash.com/random/900×700/?comida-brasileira"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Lorem Ipsum</h2>
+              <p class="card-texto">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nobis et quasi inventore odit obcaecati aliquam aut ex hic unde.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [07] -->
+            <div class="card-header">
+              <img
+                src="https://source.unsplash.com/random/900×700/?fruit"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Lorem Ipsum</h2>
+              <p class="card-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                blanditiis facilis, repellendus reprehenderit sapiente voluptate
+                inventore qui distinctio dolor omnis!
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [08] -->
+            <div class="card-header">
+              <img
+                src="https://source.unsplash.com/random/900×700/?trips"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Lorem Ipsum</h2>
+              <p class="card-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                blanditiis facilis, repellendus reprehenderit sapiente voluptate
+                inventore qui distinctio dolor omnis!
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- CARD [09] -->
+            <div class="card-header">
+              <img
+                src="https://source.unsplash.com/random/900×700/?games"
+                alt="#"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="card-titulo">Lorem Ipsum</h2>
+              <p class="card-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                blanditiis facilis, repellendus reprehenderit sapiente voluptate
+                inventore qui distinctio dolor omnis!
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-card">
+                <span>Saiba Mais</span>
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
         </div>
-      </form>
-      <hr />
-      <!-- [3] CARDS: -->
-      <section class="cards"></section>
-      <!-- [4] PAGINAÇÃO: -->
-      <div class="container-pagination">
-        <div class="pagination">
-          <a href="#">&laquo;</a>
-          <a href="#" class="active">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#">6</a>
-          <a href="#">&raquo;</a>
+        <div class="swiper-pagination">
+          <img src="/assets/images/pontos-tur/pagin-modelo.png" alt="#" />
         </div>
       </div>
-      <hr />
-      <!-- [5] CALL TO ACTION: -->
-      <div class="container-call">
-        <figure class="banner-call">
-          <img
-            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt=""
-          />
-        </figure>
-        <div class="container-left">
-          <p class="left-content">
-            Saboreie o melhor da gastronomia local em sua viagem com nossas
-            indicações de restaurantes.
-          </p>
-        </div>
-      </div>
+      <!-- [2.4] - CTA TURISMO -->
+      <div class="container-cta"></div>
     </main>
-    <hr />
     <footer></footer>
+    <!-- [3] RODAPÉ:    -->
+    <script>
+      createBanner(
+        "/assets/images/restaurantes/banner-img.jpg",
+        "Restaurantes",
+        ".container-banner-caption"
+      );
+
+      createCTA(
+        "/assets/images/restaurantes/cta-p-restaurante.png",
+        "Saboreie o melhor da gastronomia local em sua viagem com nossas indicações de restaurantes.",
+        ".container-cta"
+      );
+    </script>
   </body>
-<script>
-createBanner(
-      "/assets/images/restaurantes/banner-img.jpg",
-      "Restaurantes",
-      ".banner"
-    );
-
-</script>
-
 </html>
