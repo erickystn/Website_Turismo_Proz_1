@@ -215,16 +215,6 @@ color: #fff;
 /* ====================================================== */
 @media only screen and (max-width: 800px) {
 /* [2.1] BANNER E LEGENDA (CONFIGURAÇÕES): */
-.banner-caption {
-    font-size: 1.2em;
-    top: 78%;
-    left: 50%;
-    width: 100%;
-    min-width: 100%;
-    max-width: 400px;
-    border-radius: 0px;
-    padding: 10px;
-    }
 
 /* [2.2] - CONFIGURAÇÕES da BARRA DE BUSCA: */
 .search-bar_btn {

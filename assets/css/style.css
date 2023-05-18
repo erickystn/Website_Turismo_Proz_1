@@ -239,6 +239,19 @@ footer {
     padding-left: 2vw;
     border-left: solid 2px #42a7c3;
   }
+
+  /* CSS do Banner para paginas que usam o Banner (mobile)- Lkz */
+  .banner-caption {
+    font-size: 1.2em;
+    top: 78%;
+    left: 50%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 400px;
+    border-radius: 0px;
+    padding: 10px;
+    }
+
 }
 
 @media only screen and (max-width: 1024px) {
