@@ -6,7 +6,7 @@
 .section {
   background: transparent; /*anti*/
   margin-bottom: 10px;
-  border: 1px dashed #333;
+  border: 0px dashed #333;
   padding: 4px;
   display: flex;
   justify-content: center;
