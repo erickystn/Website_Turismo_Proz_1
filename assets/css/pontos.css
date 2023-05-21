@@ -124,18 +124,18 @@
     border: 0px dashed #333;
     min-height: 160px;
     padding: 0px 20px;
-    text-align: justify;
+    text-align: left;
 }
 
 .card-titulo {
     border: 0px dashed #333;
-    font-size: 3vh;
+    font-size: 1.2rem;
     margin: 10px 0px;
 }
 
 .card-texto {
     border: 0px dashed #333;
-    font-size: 2vh;
+    font-size: 1rem;
 }
 
 /* 2.3 Configurações do Footer do card: */
