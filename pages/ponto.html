@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="/assets/css/style.css" /><!-- 1. CSS Geral -->
     <link rel="stylesheet" href="/assets/css/pontos.css" /><!-- 2. CSS Específico-->
     <link rel="stylesheet" href="/assets/css/ponto.css" /><!-- 2. CSS Específico-->
+    <script src="https://cdn.sheetjs.com/xlsx-0.19.3/package/dist/xlsx.full.min.js"></script>
     <script src="/assets/js/createHeaderFooter.js" defer></script><!-- 3. Footer e Header -->
     <script src="/assets/js/createBanner.js"></script>
+    <script  src="/assets/js/generateLocais.js"></script>
+    <script src="/assets/js/busca.js"></script>
+    <script src="/assets/js/ponto.js" defer></script>
+
     <script
       src="https://kit.fontawesome.com/e8a034c4b7.js"
       crossorigin="anonymous"
@@ -25,71 +30,18 @@
       <!-- *********************************  -->
       <section class="section">
         <div class="container-a">
-          <div class="a1">
-            <img src="/assets/images/ponto-tur/rj1.png" alt="">
-          </div>
-          <div class="a2">          
-            <div class="a2-1">
-              <img src="/assets/images/ponto-tur/rj2.png" alt="">
-            </div>
-            <div class="a2-2">
-              <img src="/assets/images/ponto-tur/rj3.png" alt="">
-            </div>
-          </div>         
+
         </div>
 
         <div class="container-b">
-          <div class="b1">
-            <div class="b1-1">
-              <p>
-                O Rio de Janeiro é uma cidade mundialmente conhecida por suas praias incríveis, vistas deslumbrantes e vida noturna animada.<br><br> 
-
-                Além disso, a cidade oferece uma rica cultura, com destaque para a música, dança e gastronomia. O turismo é uma das principais atividades econômicas da cidade, atraindo milhões de visitantes todos os anos.
-              </p>
-            </div>
-            <div class="b1-2">
-              <ul class="ord-list">
-                <li>
-                  Cristo Redentor: o famoso monumento localizado no topo do Morro do Corcovado é um dos mais conhecidos cartões-postais do Brasil.
-                </li>
-                <li>
-                  Pão de Açúcar: o complexo de montanhas localizado na entrada da Baía de Guanabara oferece uma vista panorâmica da cidade.
-                </li>
-                <li>
-                  Copacabana e Ipanema: as praias mais famosas do Rio de Janeiro, com areias brancas e águas cristalinas.
-                </li>
-                <li>
-                  Jardim Botânico: um dos mais belos jardins botânicos do mundo, com uma grande variedade de plantas e flores.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="b2">  
+          <div class="b1"></div>
+          <div class="b2">
             <div class="b2-1">
               <img src="/assets/images/ponto-tur/rj4.png" alt="">
             </div>
             <div class="b2-2">
-              <h3 class="ol-title">Locomoção</h3>
-              <ol class="ord-list">
-                <li>
-                  Metrô: o metrô do Rio de Janeiro conta com 3 linhas que cobrem diversas áreas da cidade, incluindo a zona sul, zona norte e centro.
-                </li>
-                <li>
-                  Ônibus: os ônibus são uma opção popular de transporte na cidade, com uma grande variedade de rotas e horários disponíveis.
-                </li>
-                <li>
-                  Táxis: táxis estão disponíveis em toda a cidade e são uma opção conveniente para se locomover, especialmente em áreas sem acesso ao metrô ou ônibus.
-                </li>
-                <li>
-                  Bicicletas: o Rio de Janeiro oferece diversas opções de compartilhamento de bicicletas, incluindo o programa Bike Rio, que permite que os usuários aluguem bicicletas por hora ou por dia.
-                </li>
-                <li>
-                  Uber e outros aplicativos de transporte: aplicativos de transporte como Uber, 99 e Cabify também são populares no Rio de Janeiro e oferecem uma opção mais conveniente para se locomover pela cidade.
-                </li>
-                <li>
-                  Barcas: barcas são uma opção de transporte para quem precisa se deslocar para as cidades vizinhas, como Niterói, Paquetá e Ilha do Governador.
-                </li>
-              </ol>
+
+
             </div>
           </div>
         </div>
@@ -97,12 +49,6 @@
     </main>
     <footer></footer>
     <!-- [3] RODAPÉ:    -->
-    <script>
-      createBanner(
-        "/assets/images/ponto-tur/calcada-rj.png",
-        "Rio de Janeiro",
-        ".container-banner-caption"
-      );
-    </script>
+
   </body>
 </html>

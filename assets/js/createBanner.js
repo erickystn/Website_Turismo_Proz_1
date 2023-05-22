@@ -1,16 +1,9 @@
 const createBanner = (imgSrc, captionText, containerBox) => {
-  fetch("/pages/components/banner.html")
-    .then((response) => response.text())
-    .then((html) => {
-      const range = document.createRange();
-      const fragment = range.createContextualFragment(html);
-      const img = fragment.querySelector("img");
-      img.src = imgSrc;
-      const caption = fragment.querySelector(".banner-caption");
-      caption.textContent = captionText;
-
-      const container = document.querySelector(containerBox);
-      console.log(container);
-      container.appendChild(fragment.querySelector(".banner-container"));
-    });
+  const banner = document.createElement('figure');
+  banner.classList.add("banner-container");
+  const img = `<img src="${imgSrc}" alt="fundo-do-banner">`;
+  const caption = `<figcaption class="banner-caption">${captionText}</figcaption>`
+  const container = document.querySelector(containerBox);
+  banner.innerHTML = img + caption;
+  container.appendChild(banner);
 };
