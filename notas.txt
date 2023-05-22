@@ -1,3 +1,0 @@
-1. Copiei a estrutura e estilo da pontos.html para a de restaurantes.html.
-2. O segundo card de pontos.html e restaurantes.html está clicável, porém, esse último a página está em branco.
-3.
