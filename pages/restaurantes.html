@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PARTIU | RESTAURANTES</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <!-- 1. CSS Geral -->
-    <link rel="stylesheet" href="/assets/css/restaurantes.css" />
-    <!-- 2. CSS Específico-->
-    <link rel="stylesheet" href="/assets/css/card.css" />
-    <script src="/assets/js/createHeaderFooter.js" defer></script>
-    <!-- 3. Footer e Header -->
-    <script src="/assets/js/createBanner.js"></script>
-    <!-- 4. Banner e Legenda -->
-    <script src="/assets/js/createBusca.js" defer></script>
-    <!-- 5. Campo de Busca -->
-    <script src="/assets/js/createCTA.js"></script>
-    <!-- 6. Call to Act -->
-    <script src="https://cdn.sheetjs.com/xlsx-0.19.3/package/dist/xlsx.full.min.js"></script>
-    <script src="/assets/js/generateRestaurantes.js"></script>
-    <script src="/assets/js/createCard.js"></script>
-    <script src="/assets/js/restaurantes.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/e8a034c4b7.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- 7. Importação de Icones -->
-  </head>
-  <body>
-    <header></header>
-    <!-- [1] CABEÇALHO: -->
-    <main>
-      <!-- [2] PRINCIPAL: -->
-      <!-- [2.1] - BANNER E LEGENDA -->
-      <div class="container-banner-caption"></div>
-      <!-- [2.2] - BARRA DE BUSCA -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PARTIU | RESTAURANTES</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <!-- 1. CSS Geral -->
+  <link rel="stylesheet" href="/assets/css/restaurantes.css" />
+  <!-- 2. CSS Específico-->
+  <link rel="stylesheet" href="/assets/css/card.css" />
+  <script src="/assets/js/createHeaderFooter.js" defer></script>
+  <!-- 3. Footer e Header -->
+  <script src="/assets/js/createBanner.js"></script>
+  <!-- 4. Banner e Legenda -->
+  <script src="/assets/js/createBusca.js" defer></script>
+  <!-- 5. Campo de Busca -->
+  <script src="/assets/js/createCTA.js"></script>
+  <!-- 6. Call to Act -->
+  <script src="https://cdn.sheetjs.com/xlsx-0.19.3/package/dist/xlsx.full.min.js"></script>
+  <script src="/assets/js/generateRestaurantes.js"></script>
+  <script src="/assets/js/createCard.js"></script>
+  <script src="/assets/js/restaurantes.js" defer></script>
+  <script src="https://kit.fontawesome.com/e8a034c4b7.js" crossorigin="anonymous"></script>
+  <!-- 7. Importação de Icones -->
+</head>
+
+<body>
+  <header></header>
+  <!-- [1] CABEÇALHO: -->
+  <main>
+    <!-- [2] PRINCIPAL: -->
+    <!-- [2.1] - BANNER E LEGENDA -->
+    <div class="container-banner-caption"></div>
+    <!-- [2.2] - BARRA DE BUSCA -->
+    <div class="container">
       <div class="container-search-bar"></div>
       <!-- [2.3] - SEÇÃO DE CARDS PAGINADAS : /!\ -->
       <div class="container-cards">
@@ -44,23 +44,25 @@
           <img src="/assets/images/pontos-tur/pagin-modelo.png" alt="#" />
         </div>
       </div>
-      <!-- [2.4] - CTA TURISMO -->
-      <div class="container-cta"></div>
-    </main>
-    <footer></footer>
-    <!-- [3] RODAPÉ:    -->
-    <script>
-      createBanner(
-        "/assets/images/restaurantes/banner-img.jpg",
-        "Restaurantes",
-        ".container-banner-caption"
-      );
+    </div>
+    <!-- [2.4] - CTA TURISMO -->
+    <div class="container-cta"></div>
+  </main>
+  <footer></footer>
+  <!-- [3] RODAPÉ:    -->
+  <script>
+    createBanner(
+      "/assets/images/restaurantes/banner-img.jpg",
+      "Restaurantes",
+      ".container-banner-caption"
+    );
 
-      createCTA(
-        "/assets/images/restaurantes/cta-p-restaurante.png",
-        "Saboreie o melhor da gastronomia local em sua viagem com nossas indicações de restaurantes.",
-        ".container-cta"
-      );
-    </script>
-  </body>
+    createCTA(
+      "/assets/images/restaurantes/cta-p-restaurante.png",
+      "Saboreie o melhor da gastronomia local em sua viagem com nossas indicações de restaurantes.",
+      ".container-cta"
+    );
+  </script>
+</body>
+
 </html>
