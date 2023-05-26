@@ -1,0 +1,108 @@
+.container-cards {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-cards .swipper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 280px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 1px 24px 0px #00000024;
+  transition: 0.3s;
+}
+
+.swiper-pagination {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+.swiper-pagination img {
+  height: 40px;
+  -webkit-user-drag: none;
+}
+
+/* .card:hover {
+    transform: scale3d(1.1, 1.1, 1);
+} */
+
+/* 2.1 Configurações do header do card: */
+.card-header {
+  border: 0px solid #333;
+  margin: 0px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img {
+  min-width: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-header img:hover {
+  transform: scale(1.1);
+}
+
+/* 2.2 Configurações do body do card: */
+.card-body {
+  min-height: 160px;
+  padding: 0px 20px;
+
+  color: rgb(var(--secondary-color));
+}
+
+.card-titulo {
+  padding: 10px 0px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-texto {
+  text-align: justify;
+}
+
+/* 2.3 Configurações do Footer do card: */
+.card-footer {
+  border-top: 4px solid #33333357;
+  height: 60px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-card {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  width: 200px;
+  height: 40px;
+  background: #3498b3;
+  color: #fff;
+}
+
+.btn-card:hover {
+  background: rgba(52, 152, 179, 0.7);
+}

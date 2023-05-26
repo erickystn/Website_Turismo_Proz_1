@@ -1,253 +1,126 @@
-
-
 /* [2.2] BARRA DE BUSCA (CONFIGURAÇÕES): */
 .input-container {
-    border: 0px dashed #333;
-    background-color: transparent;
-    width: 100%;
-    height: 200px;
-    display: flex;
-        justify-content: center;
-        align-items: center;
+  border: 0px dashed #333;
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-bar_btn {
-    border: 0px dashed #333;
-    width: 40%;
-    display: flex;
-
+  border: 0px dashed #333;
+  width: 40%;
+  display: flex;
 }
 
 .bar_input {
-    border: 0px solid var(--secondary-color);
-    padding: 16px;
-    padding-left: 25px;
-    width: 100%;
-    height: 60px;
-    font-size: 1rem;
-    border-radius: 50px 0px 0px 50px;
-    box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+  border: 0px solid var(--secondary-color);
+  padding: 16px;
+  padding-left: 25px;
+  width: 100%;
+  height: 60px;
+  font-size: 1rem;
+  border-radius: 50px 0px 0px 50px;
+  box-shadow: 0px 1px 24px 0px #00000024;
 }
 
-  .btn_search {
-    width: 60px;
-    height: 60px;
-    border-radius: 0px 50px 50px 0px;
-    background-color: #fff;
-    border: 1px solid var(--secondary-color);
-    box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+.btn_search {
+  width: 60px;
+  height: 60px;
+  border-radius: 0px 50px 50px 0px;
+  background-color: #fff;
+  border: 1px solid var(--secondary-color);
+  box-shadow: 0px 1px 24px 0px #00000024;
 }
 
-  .fa-search {
-    font-size: 20px;
-    columns: #333;
+.fa-search {
+  font-size: 20px;
+  columns: #333;
 }
 
-  input:focus {
-    outline: none;
+input:focus {
+  outline: none;
 }
 
 /*CSS do container de resultados: */
 .container-result {
-    border: 1px solid #333;
-    display: flex;
-    justify-content: center;
-    height: 160px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  height: 160px;
 }
 
 /* [2.3] CARDS CONTAINER (CONFIGURAÇÕES): */
 /* 2.0 Configurações do Card e Container: */
 .container-cards {
-    border: 0px dashed #333;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+  border: 0px dashed #333;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .container-cards .swipper {
-    border: 0px dashed #333;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+  border: 0px dashed #333;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
-
-.card {
-    border: 0px dashed #333;
-    width: 280px;
-    height: 460px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-    transition: 0.3s;
-}
-
-.swiper-pagination {
-    border: 0px dashed #333;
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    user-select: none;
-}
-
-.swiper-pagination img {
-    height: 40px;
-    -webkit-user-drag: none;
-}
-
-
-/* .card:hover {
-    transform: scale3d(1.1, 1.1, 1);
-} */
-
-/* 2.1 Configurações do header do card: */
-.card-header {
-    border: 0px solid #333;
-    margin: 0px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.card-img {
-    min-width: none;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.card-header img:hover {
-    transform: scale(1.1);
-}
-
-/* 2.2 Configurações do body do card: */
-.card-body {
-    border: 0px dashed #333;
-    min-height: 160px;
-    padding: 0px 20px;
-    text-align: justify;
-}
-
-.card-titulo {
-    border: 0px dashed #333;
-    font-size: 3vh;
-    margin: 10px 0px;
-}
-
-.card-texto {
-    border: 0px dashed #333;
-    font-size: 2vh;
-}
-
-/* 2.3 Configurações do Footer do card: */
-.card-footer {
-    border-top: 4px solid #33333357;
-    height: 60px;
-    margin: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn-card {
-    border: none;
-    border-radius: 30px;
-    width: 200px;
-    height: 40px;
-    background: #3498b3;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* .btn-card:hover {
-background-color: #42a7c3;
-color: #fff;
-} */
 
 
 /* ====================================================== */
 @media only screen and (max-width: 800px) {
-/* [2.1] BANNER E LEGENDA (CONFIGURAÇÕES): */
+  /* [2.1] BANNER E LEGENDA (CONFIGURAÇÕES): */
 
-/* [2.2] - CONFIGURAÇÕES da BARRA DE BUSCA: */
-.search-bar_btn {
+  /* [2.2] - CONFIGURAÇÕES da BARRA DE BUSCA: */
+  .search-bar_btn {
     width: 100%;
     padding: 0px 40px;
-    }
+  }
 
-.bar_input {
+  .bar_input {
     min-width: 170px;
     height: 54px;
-    }
+  }
 
-.btn_search {
+  .btn_search {
     height: 54px;
-    }
+  }
 
-/* [2.3] CARDS CONTAINER (CONFIGURAÇÕES): */
-    .card {
-        width: 260px;
-        height: 410px;
-        gap: 5px;
+  /* [2.3] CARDS CONTAINER (CONFIGURAÇÕES): */
+ 
 
-      }
-    .card:hover {
-      transform: none;
-    }
-
-    .card-header {
-      height: 180px;
-    }
-
-    .card-body {
-      min-height: none;
-      padding: 0px 10px;
-    }
-
-    .card-footer {
-      height:56px;
-      margin: 0px;
-    }
-
-    .btn-card {
-      width: 156px;
-      height: 34px;
-    }
-
-/* [2.4] CTA DE TURISMO (CONFIGURAÇÕES): */
-.container-call {
+  /* [2.4] CTA DE TURISMO (CONFIGURAÇÕES): */
+  .container-call {
     flex-direction: column;
     align-items: center;
     margin: 20px 0px;
-    }
+  }
 
-.banner-call {
+  .banner-call {
     width: 100%;
     height: 280px;
-    }
+  }
 
-
-.container-left {
+  .container-left {
     max-width: 72%;
     height: 30%;
     position: absolute;
     top: 70%;
-    }
+  }
 
-.left-content {
+  .left-content {
     font-size: 0.8rem;
     text-align: center;
     width: 100%;
     height: auto;
     margin: 10px;
-    }
+  }
 }

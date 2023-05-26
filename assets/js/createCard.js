@@ -1,5 +1,7 @@
-const createCard = (cardImg, cardTitle, cardText,typePage, target) => {
+const createCard = (cardImg, cardTitle, cardText, typePage, target) => {
   const card = `<div class="card">
+  <a href="/pages/${typePage}.html?target=${target}">
+
             <div class="card-header">
               <img
                 src="${cardImg}"
@@ -14,11 +16,12 @@ const createCard = (cardImg, cardTitle, cardText,typePage, target) => {
               </p>
             </div>
             <div class="card-footer">
-              <button class="btn-card" onclick="window.open('/pages/${typePage}.html?target=${target}', '_blank')">
+              <button class="btn-card" onclick="window.location.href = '/pages/${typePage}.html?target=${target}';">
                 <span>Saiba Mais</span>
                 <i class="fas fa-external-link-alt"></i>
               </button>
             </div>
+            </a>
           </div>
 `;
   return card;

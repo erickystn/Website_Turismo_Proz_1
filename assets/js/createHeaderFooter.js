@@ -1,6 +1,7 @@
-
 const header = `
 <div class="header">
+  <div class="container">
+        <div class="wrapper">
         <a href="/"><div class="logo">Partiu!</div></a>
         <nav>
           <ul class="menu"> <!--  Menu para desktop -->
@@ -21,12 +22,18 @@ const header = `
       </ul>
     </div>
   </div>
+
+        </div>
+  </div>
 </div>
 `;
 
 document.querySelector("header").innerHTML = header;
 
-const footer = `<div class="footer">
+const footer = `
+<div class="container">
+<div class="wrapper">
+<div class="footer">
 
   <section class="project-footer"> <!--  Icone do Site e info -->
     <h3 class="logo-footer">Partiu!</h3>
@@ -41,7 +48,7 @@ const footer = `<div class="footer">
 
     <h3>Sobre Nós</h3> <!-- Titulo  -->
 
-    <a href="#"> <!--  Link -->
+    <a href="/pages/sobre.html"> <!--  Link -->
       <figure class="members-footer">
         <img
           src="/assets/images/membros/edna.jpeg"
@@ -80,6 +87,8 @@ const footer = `<div class="footer">
       <li><a href="/pages/restaurantes.html">Restaurantes</a></li>
     </ul>
   </nav>
+</div>
+</div>
 </div>`;
 
 document.querySelector("footer").innerHTML = footer;

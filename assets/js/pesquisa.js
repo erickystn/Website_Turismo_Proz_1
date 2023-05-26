@@ -7,8 +7,6 @@ const loadPage = () => {
   }
   document.querySelector(".bar_input").value = url.searchParams.get("search");
 
-  console.log("passou aki");
-
   generateRestaurantes()
     .then((array) => buscaRestaurantes(array, url.searchParams.get("search")))
     .then((result) => {
@@ -23,5 +21,3 @@ const loadPage = () => {
 };
 
 window.onload = loadPage;
-
-//
