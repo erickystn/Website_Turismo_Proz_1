@@ -1,10 +1,18 @@
+.card {
+
+ flex: 0 0 260px;
+
+}
+
+
+
 main {
-  padding-right: 4rem;
-  padding-left: 4rem;
+  padding: 0px 50px;
   background-image: url("/assets/images/index/trilha.png");
   background-attachment: fixed;
   background-size: contain;
-  max-width: 1440px;
+  width: 100%;
+  max-width: 1246px;
   margin: 0 auto;
 }
 
@@ -149,20 +157,6 @@ main {
   font-size: 1.2vw;
 }
 
-
-.state-attraction {
-  font-size: 0.9vw;
-  font-weight: 500;
-}
-
-.title-attraction {
-  font-size: 1.2vw;
-}
-
-.description-attraction {
-  font-size: clamp(10px, 1vw, 16px);
-}
-
 /* CSS DO CTA */
 
 .section-cta {
@@ -212,35 +206,15 @@ main {
   width: 100%;
 }
 .title-restaurants > h2 {
-  font-size: 1.4vw;
+  font-size: 1.5vw;
 }
 .title-restaurants > p {
   margin-top: 10px;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
 }
-
-
 
 /* CSS PARA TELA TAMANHO MEDIO P CARDS DESTINOS E RESTAURANTES */
-@media only screen and (max-width: 1110px) {
-  .cards div:nth-child(4) {
-    display: none;
-  }
 
-  .card {
-    width: 25%;
-    height: 28vw;
-  }
-
-  .cards-restaurants div:nth-child(4) {
-    display: none;
-  }
-
-  .card-restaurant {
-    width: 25%;
-    height: 28vw;
-  }
-}
 
 /* CSS MOBILE PARA O INDEX  */
 
@@ -317,37 +291,6 @@ main {
     font-size: 20px;
   }
 
-  .cards {
-    flex-direction: column;
-  }
-
-  .card {
-    width: 250px;
-    height: 300px;
-  }
-
-  .state-attraction {
-    font-size: 12px;
-  }
-  .title-attraction {
-    font-size: 16px;
-  }
-  .description-attraction {
-    font-size: 12px;
-  }
-
-  .state-restaurant {
-    font-size: 12px;
-  }
-
-  .title-restaurant {
-    font-size: 16px;
-  }
-
-  .description-restaurant {
-    font-size: 12px;
-  }
-
   /* CSS MOBILE CTA */
   .section-cta {
     flex-direction: column-reverse;
@@ -388,14 +331,7 @@ main {
     font-size: 20px;
   }
 
-  .cards-restaurants {
-    flex-direction: column;
-  }
-
-  .card-restaurant {
-    width: 250px;
-    height: 300px;
-  }
+ }
 
   @media only screen and (max-width: 600px) {
     body {
@@ -410,4 +346,4 @@ main {
       width: 15%;
     }
   }
-}
+

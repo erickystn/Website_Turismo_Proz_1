@@ -163,7 +163,6 @@ footer {
 .banner-container {
   border: 0px dashed #333;
   position: relative;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;

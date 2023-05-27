@@ -5,13 +5,22 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/card.css" />
+     <link rel="stylesheet" href="/assets/css/index.css" />
     <script
       src="https://kit.fontawesome.com/e8a034c4b7.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/assets/lib/lodash.min.js"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-0.19.3/package/dist/xlsx.full.min.js"></script>
+    <script src="/assets/js/generateLocais.js"></script>
+    <script src="/assets/js/generateRestaurantes.js"></script>
+    <script src="/assets/js/createCard.js"></script>
+    <script src="/assets/js/index.js" defer></script>
     <script src="/assets/js/createHeaderFooter.js" defer></script>
+
     <title>Partiu! | Home Page</title>
   </head>
   <body>
@@ -54,7 +63,7 @@
           </figure>
         </div>
 
-        <div class="form" >
+        <div class="form">
           <!-- Form aonde será feita a pesquisa -->
           <form action="/pages/pesquisa.html" class="form-search">
             <input type="text" name="search" id="search" />
@@ -85,34 +94,9 @@
           <p>Locais que podem tornar suas férias inesquecíveis</p>
         </div>
 
-        <div class="cards">
-          <!-- Div para comportar  os cards  -->
-
-          <div class="card">
-            <!-- div que represetará o card -->
-            <figure>
-              <img src="/assets/images/index/attraction.png" alt="" />
-              <!--  Imagem do card  -->
-
-              <figcaption>
-                <p class="state-attraction">
-                  <!-- p que indica  o estado do destino  -->
-                  <i
-                    aria-hidden="true"
-                    aria-label="Ícone de localização"
-                    class="primary-color fa-solid fa-location-dot"
-                  ></i>
-                  Porto Seguro
-                </p>
-                <h3 class="title-attraction">Planalto das Colinas</h3>
-                <!-- nome do destino  -->
-                <p class="description-attraction">
-                  O Planalto das colinhas é otimo lugar para viajar!
-                  <!--  Breve descrição do Destino -->
-                </p>
-              </figcaption>
-            </figure>
-          </div>
+        <div class="container-cards">
+          <!--  Div que comportará os cards dos restaurantes principais  -->
+          <div id="locais" class="swipper">Locais</div>
         </div>
       </section>
 
@@ -145,34 +129,9 @@
           <p>Prove todo o sabor que a gastronomia Brasileira tem a oferecer</p>
         </div>
 
-        <div class="cards-restaurants">
+        <div class="container-cards">
           <!--  Div que comportará os cards dos restaurantes principais  -->
-
-          <div class="card-restaurant">
-            <!--  Card que representa o restaurante  -->
-            <figure>
-              <img src="/assets/images/index/hamburguer.jpg" alt="" />
-              <!--  Imagem do restaurante  -->
-              <figcaption>
-                <p class="state-restaurant">
-                  <!-- elemento que representa a cidade do restaurante -->
-                  <i
-                    aria-hidden="true"
-                    aria-label="Ícone de localização"
-                    class="primary-color fa-solid fa-location-dot"
-                  ></i>
-                  Porto de Galinhas
-                </p>
-                <h3 class="title-restaurant">Fornada Maluca</h3>
-                <!--  cabeçalho que representa o nome do restaurante  -->
-                <p class="description-restaurant">
-                  <!--  Breve descrição do restaurante  -->
-                  O melhor Hamburguer da região galinácea! Os lanches e petiscos
-                  de mais alto padrão de sabor...
-                </p>
-              </figcaption>
-            </figure>
-          </div>
+          <div id="restaurantes" class="swipper">Restaurantes</div>
         </div>
       </section>
     </main>

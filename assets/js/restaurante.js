@@ -1,12 +1,12 @@
 const url = new URL(window.location.href);
 
-const loadPage = () => {
+const loadPage = async () => {
   if (!url.searchParams.has("target") || !url.searchParams.get("target")) {
     window.location.replace("/");
   } else {
     console.log(typeof Number(url.searchParams.get("target")));
 
-    generateRestaurantes()
+   await generateRestaurantes()
         .then((array) =>
         buscaRestaurantes(array, Number(url.searchParams.get("target")), true)
       )

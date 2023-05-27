@@ -10,7 +10,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -85,9 +85,9 @@
 
 /* 2.3 Configurações do Footer do card: */
 .card-footer {
-  border-top: 4px solid #33333357;
+  border-top: 4px solid rgba(var(--primary-color), 0.5);
   height: 60px;
-  margin: 0 20px;
+  margin: 12px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,10 +99,11 @@
   border-radius: 30px;
   width: 200px;
   height: 40px;
-  background: #3498b3;
+  background: rgba(var(--primary-color), 1);
   color: #fff;
 }
 
 .btn-card:hover {
   background: rgba(52, 152, 179, 0.7);
 }
+
