@@ -1,10 +1,6 @@
 .card {
-
- flex: 0 0 260px;
-
+  flex: 0 0 260px;
 }
-
-
 
 main {
   padding: 0px 50px;
@@ -41,16 +37,16 @@ main {
   padding-right: 20px;
 }
 
-.hero-text > h1 {
+.hero-text > h2 {
   width: 70%;
-  font-size: 3vw;
+  font-size: 2rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
 .hero-text > p {
   width: 70%;
-  font-size: 1.4vw;
+  font-size: 1.5rem;
 }
 
 .figure-hero > img {
@@ -150,11 +146,11 @@ main {
   width: 100%;
 }
 .title-attractions > h2 {
-  font-size: 1.4vw;
+  font-size: 1.4rem;
 }
 .title-attractions > p {
   margin-top: 10px;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
 }
 
 /* CSS DO CTA */
@@ -189,7 +185,7 @@ main {
 
 .cta-text > p {
   width: 80%;
-  font-size: 1.4vw;
+  font-size: 1.4rem;
 }
 
 .figure-cta > img {
@@ -206,15 +202,14 @@ main {
   width: 100%;
 }
 .title-restaurants > h2 {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 .title-restaurants > p {
   margin-top: 10px;
-  font-size: 1.3vw;
+  font-size: 1.3rem;
 }
 
 /* CSS PARA TELA TAMANHO MEDIO P CARDS DESTINOS E RESTAURANTES */
-
 
 /* CSS MOBILE PARA O INDEX  */
 
@@ -232,7 +227,7 @@ main {
   .hero-text {
     padding: 0;
   }
-  .hero-text > h1 {
+  .hero-text > h2 {
     width: 100%;
     font-size: 20px;
   }
@@ -330,20 +325,18 @@ main {
   .title-restaurants p {
     font-size: 20px;
   }
+}
 
- }
-
-  @media only screen and (max-width: 600px) {
-    body {
-      min-width: 560px !important;
-    }
-
-    .form-search input {
-      width: 85%;
-      font-size: 20px;
-    }
-    .form-search button {
-      width: 15%;
-    }
+@media only screen and (max-width: 600px) {
+  body {
+    min-width: 560px !important;
   }
 
+  .form-search input {
+    width: 85%;
+    font-size: 20px;
+  }
+  .form-search button {
+    width: 15%;
+  }
+}
