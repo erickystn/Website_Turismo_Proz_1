@@ -68,9 +68,10 @@
 /* 2.2 Configurações do body do card: */
 .card-body {
   min-height: 160px;
+  max-height: 160PX;
+  overflow: hidden;
   padding: 0px 20px;
-
-  color: rgb(var(--secondary-color));
+color: rgb(var(--secondary-color));
 }
 
 .card-titulo {
