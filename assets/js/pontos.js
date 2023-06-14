@@ -1,6 +1,6 @@
 generateLocais().then((element) => {
   let cards = "";
-  console.log(element[0]);
+ 
   let final;
   if (element.length < 9) final = element.length;
   else final = 9;

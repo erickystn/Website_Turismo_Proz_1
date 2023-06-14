@@ -2,7 +2,7 @@ const buscaLocais = (arrayList, target, buscaId = false) => {
   if (buscaId) {
     const index = arrayList.findIndex((elemento) => elemento.id === target);
     if (index === -1) return false;
-    console.log(arrayList[index]);
+    
     return arrayList[index];
   }
 

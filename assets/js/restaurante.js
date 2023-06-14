@@ -4,7 +4,7 @@ const loadPage = async () => {
   if (!url.searchParams.has("target") || !url.searchParams.get("target")) {
     window.location.replace("/");
   } else {
-    console.log(typeof Number(url.searchParams.get("target")));
+   
 
    await generateRestaurantes()
         .then((array) =>

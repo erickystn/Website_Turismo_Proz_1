@@ -1,6 +1,6 @@
 generateRestaurantes().then((element) => {
   let cards = "";
-  console.table(element);
+
   let final;
   if (element.length < 9) final = element.length;
   else final = 9;

@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/sugestoes.css" />
+    <script src="/assets/js/sugestões.js" defer></script>
     <script
       src="https://kit.fontawesome.com/e8a034c4b7.js"
       crossorigin="anonymous"
@@ -27,39 +28,39 @@
           Se animou com nosso blog e gostaria de sugerir novos locais? Preencha
           o nosso formulário e veja seu o local aparecer no nosso site.
         </h2>
-        <form action="">
-          <fieldset >
+        <form id="form-sugestao">
+          <fieldset>
             <legend>Insira seus dados:</legend>
 
             <label for="name"
-              >Nome: <input type="text" id="name" name="name"
-            /></label>
+              >Nome: <sup>*</sup> <input type="text" id="name" name="name"
+            /> <sup class="err-nome">Nome menor de 3 letras</sup></label>
 
             <label for="email"
-              >Email: <input type="text" id="email" name="name"
-            /></label>
+              >Email: <sup>*</sup>
 
-            <label for="sugestoes"
-              >Sugestões de lugares, restaurantes, etc:</label
-            >
+              <input type="text" id="email" name="email"
+            />  <sup class="err-email">Formato de email inválido</sup>
+          </label>
+
+            <label for="sugestoes">Sugestões de lugares, restaurantes: </label>
 
             <textarea
-              name="sugestoes"
-              id="sugestoes"
-              
-            ></textarea>
+              name="sugestaoText"
+              id="sugestaoText"
+              placeholder="Digite aqui informações sobre o local ou restaurante, pontos de interesses, pratos..."
 
-            <label for="file"
-              >Importar arquivo <input type="file" id="file" name="file"
-            /></label>
+            ></textarea>
+            <span class="err-sugestao"> Mínimo 15 palavras não atingidas</span>
 
             <label for="novidades">
               <input type="checkbox" id="novidades" name="novidades" />Aceito
               receber notificações e novidades de nosso site.
             </label>
           </fieldset>
+          <div><span class="err-submit">* Um ou mais campos não foram preenchidos corretamente</span></div>
 
-          <input type="submit" value="Enviar" />
+          <input type="submit" id="submit" value="Enviar" />
         </form>
       </div>
     </main>

@@ -10,13 +10,13 @@ const loadPage = () => {
   generateRestaurantes()
     .then((array) => buscaRestaurantes(array, url.searchParams.get("search")))
     .then((result) => {
-      console.log(result);
+
     });
 
   generateLocais()
     .then((array) => buscaLocais(array, url.searchParams.get("search")))
     .then((result) => {
-      console.log(result);
+      
     });
 };
 
