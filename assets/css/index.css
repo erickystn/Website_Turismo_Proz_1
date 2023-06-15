@@ -1,6 +1,6 @@
-.card {
+/* .card {
   flex: 0 0 260px;
-}
+} */
 
 main {
   padding: 0px 50px;
@@ -208,7 +208,7 @@ main {
 
 @media only screen and (max-width: 910px) {
   main {
-    padding: 0;
+    padding: 8px;
     min-width: 320px;
   }
 

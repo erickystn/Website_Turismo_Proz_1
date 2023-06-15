@@ -1,17 +1,5 @@
-const form = document.querySelector("#form-sugestao");
+// Tratando o input Nome
 const nome = document.querySelector("#name");
-const email = document.querySelector("#email");
-const sugestaoTexto = document.querySelector("#sugestaoText");
-const receberNotificacoes = document.querySelector("#novidades");
-const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const regexSugestao = /\S+/g;
-
-nome.value = "ANA";
-email.value = "xkyx@live.com";
-sugestaoTexto.value =
-  "A brisa suave sopra pelos campos verdes, enquanto os pássaros cantam melodias encantadoras no céu azul.";
-
-// .err-email, .err-nome, .err-sugestao, .err-submit
 const nomeCheck = (e) => {
   if (e.target.value.length < 3) {
     if (!document.querySelector(".err-nome").classList.contains("error")) {
@@ -23,9 +11,11 @@ const nomeCheck = (e) => {
     nome.classList.remove("error-input");
   }
 };
-
 nome.addEventListener("blur", nomeCheck);
 
+// Tratando o input email
+const email = document.querySelector("#email");
+const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const emailCheck = (e) => {
   if (!regexEmail.test(e.target.value)) {
     if (!document.querySelector(".err-email").classList.contains("error")) {
@@ -39,6 +29,9 @@ const emailCheck = (e) => {
 };
 email.addEventListener("blur", emailCheck);
 
+// Tratando o Text AREA
+const sugestaoTexto = document.querySelector("#sugestaoText");
+const regexSugestao = /\S+/g;
 const sugestoesCheck = (e) => {
   const textoSemEspacos = e.target.value.trim() || "A";
   console.log(textoSemEspacos.match(regexSugestao).length);
@@ -52,9 +45,10 @@ const sugestoesCheck = (e) => {
     }
   }
 };
-
 sugestaoTexto.addEventListener("blur", sugestoesCheck);
 
+// Tratando o formulario completo
+const form = document.querySelector("#form-sugestao");
 const submitForm = (e) => {
   e.preventDefault();
 
@@ -101,9 +95,14 @@ const submitForm = (e) => {
   } else {
     if (!document.querySelector(".err-submit").classList.contains("error")) {
       document.querySelector(".err-submit").classList.add("error");
-      sugestaoTexto.classList.add("error-input");
     }
   }
 };
-
 form.addEventListener("submit", submitForm);
+
+//Variaveis para pagina iniciar carregada de info
+nome.value = "Ana Sperantto";
+email.value = "ana_ana@live.com";
+sugestaoTexto.value = `Olá equipe do Blog Partiu!, gostaria de sugerir o incrível restaurante "Sabor Brasileiro"
+localizado na encantadora cidade de Paraty, Brasil. A culinária é uma verdadeira viagem pelos sabores do país,
+com pratos típicos e ingredientes frescos. Recomendo provar a feijoada e a caipirinha, autênticos e deliciosos.`;
