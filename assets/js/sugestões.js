@@ -80,7 +80,7 @@ const submitForm = (e) => {
 
             </h2>
         `;
-    tempoRestante = 10;
+    tempoRestante = 5;
     const intervalo = setInterval(() => {
       tempoRestante--;
       document.querySelector("#contador").innerHTML = tempoRestante;

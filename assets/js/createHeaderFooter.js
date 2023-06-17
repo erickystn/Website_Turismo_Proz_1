@@ -44,6 +44,7 @@ const header = `
 </div>
 `;
 
+
 document.querySelector("header").innerHTML = header;
 const menuDropdown = document.querySelector(".dropdown-list");
 const sandwich = document.querySelector("#menu-icon");

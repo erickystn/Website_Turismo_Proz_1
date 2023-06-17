@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <!-- 1. CSS Geral -->
     <link rel="stylesheet" href="/assets/css/pesquisa.css" />
+    <link rel="stylesheet" href="/assets/css/card.css" />
+    <link rel="stylesheet" href="/assets\css\card-vertical.css" />
     <script src="https://cdn.sheetjs.com/xlsx-0.19.3/package/dist/xlsx.full.min.js"></script>
     <!-- 2. CSS Específico-->
     <script src="/assets/js/createHeaderFooter.js" defer></script>
@@ -21,6 +23,7 @@
     <script src="/assets/js/generateRestaurantes.js"></script>
     <script src="/assets/js/busca.js"></script>
     <script src="/assets/js/pesquisa.js" defer></script>
+
     <!-- 6. Call to Act -->
     <script
       src="https://kit.fontawesome.com/e8a034c4b7.js"
@@ -36,10 +39,126 @@
       <!-- [2.1] - BANNER E LEGENDA -->
       <div class="container-banner-caption"></div>
       <!-- [2.2] - BARRA DE BUSCA -->
-      <div class="container-search-bar"></div>
-      <!-- [2.3] - RESULTADO DAS BUSCAS: /!\ -->
-      <div class="container-result">
-        <!-- Esse container é para colocar os resultados das buscas 'creio eu'-->
+      <div class="container">
+        <div class="container-search-bar"></div>
+        <!-- [2.3] - RESULTADO DAS BUSCAS: /!\ -->
+        <div class="container-result">
+          <p>10 resultados para destinos</p>
+          <div id="pontos" class="container-cards">
+            <div class="swipper">
+              <div class="card">
+                <a href="">
+                  <div class="card-header">
+                    <img src="" alt="#" class="card-img" />
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-titulo">Titulo</h2>
+                    <p class="card-texto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Deserunt, explicabo tempora ut amet necessitatibus quas
+                      perferendis, id, tenetur suscipit neque laudantium
+                      excepturi cumque dolor. Amet quos officia eveniet
+                      temporibus minus?
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button
+                      class="btn-card"
+                      onclick="window.location.href = '/pages/${typePage}.html?target=${target}';"
+                    >
+                      <span>Saiba Mais</span>
+                      <i class="fas fa-external-link-alt"></i>
+                    </button>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="">
+                  <div class="card-header">
+                    <img src="" alt="#" class="card-img" />
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-titulo">Titulo</h2>
+                    <p class="card-texto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Deserunt, explicabo tempora ut amet necessitatibus quas
+                      perferendis, id, tenetur suscipit neque laudantium
+                      excepturi cumque dolor. Amet quos officia eveniet
+                      temporibus minus?
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button
+                      class="btn-card"
+                      onclick="window.location.href = '/pages/${typePage}.html?target=${target}';"
+                    >
+                      <span>Saiba Mais</span>
+                      <i class="fas fa-external-link-alt"></i>
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <p>10 resultados para restaurantes</p>
+          <div id="pontos" class="container-cards">
+            <div class="swipper">
+              <div class="card">
+                <a href="">
+                  <div class="card-header">
+                    <img src="" alt="#" class="card-img" />
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-titulo">Titulo</h2>
+                    <p class="card-texto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Deserunt, explicabo tempora ut amet necessitatibus quas
+                      perferendis, id, tenetur suscipit neque laudantium
+                      excepturi cumque dolor. Amet quos officia eveniet
+                      temporibus minus?
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button
+                      class="btn-card"
+                      onclick="window.location.href = '/pages/${typePage}.html?target=${target}';"
+                    >
+                      <span>Saiba Mais</span>
+                      <i class="fas fa-external-link-alt"></i>
+                    </button>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="">
+                  <div class="card-header">
+                    <img src="" alt="#" class="card-img" />
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-titulo">Titulo</h2>
+                    <p class="card-texto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Deserunt, explicabo tempora ut amet necessitatibus quas
+                      perferendis, id, tenetur suscipit neque laudantium
+                      excepturi cumque dolor. Amet quos officia eveniet
+                      temporibus minus?
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button
+                      class="btn-card"
+                      onclick="window.location.href = '/pages/${typePage}.html?target=${target}';"
+                    >
+                      <span>Saiba Mais</span>
+                      <i class="fas fa-external-link-alt"></i>
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer></footer>

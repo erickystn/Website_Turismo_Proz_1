@@ -55,12 +55,7 @@ input:focus {
 }
 
 /*CSS do container de resultados: */
-.container-result {
-  border: 1px solid #333;
-  display: flex;
-  justify-content: center;
-  height: 160px;
-}
+
 
 /* [2.3] CARDS CONTAINER (CONFIGURAÇÕES): */
 /* 2.0 Configurações do Card e Container: */
