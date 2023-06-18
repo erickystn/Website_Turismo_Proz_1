@@ -6,10 +6,14 @@ const header = `
       <nav>
         <ul class="menu">
           <!--  Menu para desktop -->
+
           <li><a href="/pages/pontos.html">Destinos</a></li>
+          <li><a href="/pages/restaurantes.html">Restaurantes</a></li>
           <li><a href="/pages/sugestoes.html">Sugestões</a></li>
           <li><a href="/pages/sobre.html">Sobre Nós</a></li>
-          <li><a href="/pages/restaurantes.html">Restaurantes</a></li>
+          <li><a href="/pages/pesquisa.html?search="><img src="/assets/images/header/search-glass.svg" alt="Icone de pesquisa"></a></li>
+
+
         </ul>
       </nav>
 
@@ -34,9 +38,11 @@ const header = `
         <ul class="dropdown-list">
           <!--  lista para menu mobile  -->
           <li><a href="/pages/pontos.html">Destinos</a></li>
+          <li><a href="/pages/restaurantes.html">Restaurantes</a></li>
           <li><a href="/pages/sugestoes.html">Sugestões</a></li>
           <li><a href="/pages/sobre.html">Sobre Nós</a></li>
-          <li><a href="/pages/restaurantes.html">Restaurantes</a></li>
+          <li><a href="/pages/pesquisa.html?search=">Pesquisar</a></li>
+
         </ul>
       </nav>
     </div>
@@ -44,18 +50,14 @@ const header = `
 </div>
 `;
 
-
 document.querySelector("header").innerHTML = header;
 const menuDropdown = document.querySelector(".dropdown-list");
 const sandwich = document.querySelector("#menu-icon");
 
-sandwich.addEventListener('click', () => {
+sandwich.addEventListener("click", () => {
   sandwich.classList.toggle("menu-icon-rotate");
   setTimeout(() => menuDropdown.classList.toggle("dropdown-list-on"), 500);
-
-})
-
-
+});
 
 const footer = `
 <div class="container">

@@ -21,7 +21,8 @@
     <script src="/assets/js/createCTA.js"></script>
     <script src="/assets/js/generateLocais.js"></script>
     <script src="/assets/js/generateRestaurantes.js"></script>
-    <script src="/assets/js/busca.js"></script>
+    <script src="/assets/js/busca.js" defer></script>
+    <script src="/assets/js/createCard.js"></script>
     <script src="/assets/js/pesquisa.js" defer></script>
 
     <!-- 6. Call to Act -->
@@ -43,124 +44,21 @@
         <div class="container-search-bar"></div>
         <!-- [2.3] - RESULTADO DAS BUSCAS: /!\ -->
         <div class="container-result">
-          <p>10 resultados para destinos</p>
-          <div id="pontos" class="container-cards">
-            <div class="swipper">
-              <div class="card">
-                <a href="">
-                  <div class="card-header">
-                    <img src="" alt="#" class="card-img" />
-                  </div>
-                  <div class="card-body">
-                    <h2 class="card-titulo">Titulo</h2>
-                    <p class="card-texto">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt, explicabo tempora ut amet necessitatibus quas
-                      perferendis, id, tenetur suscipit neque laudantium
-                      excepturi cumque dolor. Amet quos officia eveniet
-                      temporibus minus?
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <button
-                      class="btn-card"
-                      onclick="window.location.href = '/pages/${typePage}.html?target=${target}';"
-                    >
-                      <span>Saiba Mais</span>
-                      <i class="fas fa-external-link-alt"></i>
-                    </button>
-                  </div>
-                </a>
-              </div>
-              <div class="card">
-                <a href="">
-                  <div class="card-header">
-                    <img src="" alt="#" class="card-img" />
-                  </div>
-                  <div class="card-body">
-                    <h2 class="card-titulo">Titulo</h2>
-                    <p class="card-texto">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt, explicabo tempora ut amet necessitatibus quas
-                      perferendis, id, tenetur suscipit neque laudantium
-                      excepturi cumque dolor. Amet quos officia eveniet
-                      temporibus minus?
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <button
-                      class="btn-card"
-                      onclick="window.location.href = '/pages/${typePage}.html?target=${target}';"
-                    >
-                      <span>Saiba Mais</span>
-                      <i class="fas fa-external-link-alt"></i>
-                    </button>
-                  </div>
-                </a>
-              </div>
-            </div>
+
+          <p id="text-pontos"></p>
+          <div id="div-pontos" class="container-cards">
+            <div class="swipper"></div>
           </div>
 
-          <p>10 resultados para restaurantes</p>
-          <div id="pontos" class="container-cards">
-            <div class="swipper">
-              <div class="card">
-                <a href="">
-                  <div class="card-header">
-                    <img src="" alt="#" class="card-img" />
-                  </div>
-                  <div class="card-body">
-                    <h2 class="card-titulo">Titulo</h2>
-                    <p class="card-texto">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt, explicabo tempora ut amet necessitatibus quas
-                      perferendis, id, tenetur suscipit neque laudantium
-                      excepturi cumque dolor. Amet quos officia eveniet
-                      temporibus minus?
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <button
-                      class="btn-card"
-                      onclick="window.location.href = '/pages/${typePage}.html?target=${target}';"
-                    >
-                      <span>Saiba Mais</span>
-                      <i class="fas fa-external-link-alt"></i>
-                    </button>
-                  </div>
-                </a>
-              </div>
-              <div class="card">
-                <a href="">
-                  <div class="card-header">
-                    <img src="" alt="#" class="card-img" />
-                  </div>
-                  <div class="card-body">
-                    <h2 class="card-titulo">Titulo</h2>
-                    <p class="card-texto">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt, explicabo tempora ut amet necessitatibus quas
-                      perferendis, id, tenetur suscipit neque laudantium
-                      excepturi cumque dolor. Amet quos officia eveniet
-                      temporibus minus?
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <button
-                      class="btn-card"
-                      onclick="window.location.href = '/pages/${typePage}.html?target=${target}';"
-                    >
-                      <span>Saiba Mais</span>
-                      <i class="fas fa-external-link-alt"></i>
-                    </button>
-                  </div>
-                </a>
-              </div>
-            </div>
+          <p id="text-restaurantes"></p>
+          <div id="div-restaurantes" class="container-cards">
+            <div class="swipper"></div>
           </div>
+          <div class="loader"></div>
         </div>
       </div>
     </main>
+
     <footer></footer>
     <!-- [3] RODAPÉ:    -->
     <script>

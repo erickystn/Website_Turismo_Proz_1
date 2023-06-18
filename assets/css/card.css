@@ -109,6 +109,7 @@
 }
 
 @media screen and (max-width: 560px) {
+ 
   .card {
     width: 100%;
     height: fit-content;
