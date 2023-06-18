@@ -2,6 +2,11 @@
   box-sizing: border-box;
   transition: none; /*all 0.9s ease-in-out*/
 }
+main {
+  background-image: url("/assets/images/index/trilha.png");
+  background-attachment: fixed;
+  background-size: contain;
+}
 
 .section {
   background: transparent; /*anti*/

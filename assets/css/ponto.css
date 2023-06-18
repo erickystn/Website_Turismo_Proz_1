@@ -2,6 +2,11 @@
   box-sizing: border-box;
   transition: none; /*all 0.9s ease-in-out*/
 }
+main {
+  background-image: url("/assets/images/index/trilha.png");
+  background-attachment: fixed;
+  background-size: contain;
+}
 
 .section {
   background: transparent; /*anti*/
@@ -150,15 +155,15 @@
 
 @media only screen and (max-width: 800px) {
   .container-a {
-      flex-direction: column;  
+      flex-direction: column;
       min-width: 90%;
-  }    
-
-  .a1 {
-      height: 200px;    
   }
 
-  .a2 {      
+  .a1 {
+      height: 200px;
+  }
+
+  .a2 {
       gap: 1px;
       flex-direction: row;
   }
@@ -179,7 +184,7 @@
       width: 80vw;
   }
 
-  .b1 .b1-1 {  
+  .b1 .b1-1 {
       width: 100%;
       height: auto;
       font-size: 0.9rem;
@@ -191,7 +196,7 @@
       width: 100%;
       font-size: 0.9rem;
       border-bottom: 2px solid #42A7C3;
-  } 
+  }
 
   .b2 {
       display: flex;
@@ -199,15 +204,15 @@
       width: 80vw;
   }
 
-  .b2 .b2-1 {  
+  .b2 .b2-1 {
       width: 100%;
       height: auto;
       font-size: 0.9rem;
   }
 
-  .b2 .b2-2 { 
+  .b2 .b2-2 {
       width: 100%;
       font-size: 0.9rem;
       border: none;
-  } 
+  }
 }

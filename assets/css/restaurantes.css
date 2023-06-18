@@ -1,4 +1,8 @@
-
+main {
+  background-image: url("/assets/images/index/trilha.png");
+  background-attachment: fixed;
+  background-size: contain;
+}
 
 /* [2.2] BARRA DE BUSCA (CONFIGURAÇÕES): */
 .input-container {

@@ -1,3 +1,9 @@
+main {
+  background-image: url("/assets/images/index/trilha.png");
+  background-attachment: fixed;
+  background-size: contain;
+}
+
 /* [2.2] BARRA DE BUSCA (CONFIGURAÇÕES): */
 .input-container {
   background-color: transparent;
@@ -146,6 +152,13 @@ input:focus {
   display: none;
 }
 
+#div-pontos{
+  margin-bottom: 100px;
+}
+#text-pontos, #text-restaurantes{
+  padding-bottom: 10px;
+  border-bottom: #3339 2px solid;
+}
 
 
 /* ====================================================== */

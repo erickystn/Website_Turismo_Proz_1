@@ -27,7 +27,7 @@ const loadPage = () => {
       if (result == false) {
         document.querySelector(
           "#text-restaurantes"
-        ).innerText = `0 resultados para restaurantes`;
+        ).innerHTML = `0 resultados para <b>Restaurantes</b>`;
         document.querySelector(
           "#div-restaurantes .swipper"
         ).innerHTML = `<div class="not-found">
@@ -50,7 +50,7 @@ const loadPage = () => {
 
         document.querySelector(
           "#text-restaurantes"
-        ).innerText = `${result.length} resultados para restaurantes`;
+        ).innerHTML = `${result.length} resultados para <b>Restaurantes</b>`;
         document.querySelector("#div-restaurantes .swipper").innerHTML = cards;
         document.querySelector(".loader").classList.add("loader-none");
       }
@@ -64,7 +64,7 @@ const loadPage = () => {
       if (result == false) {
         document.querySelector(
           "#text-pontos"
-        ).innerText = `0 resultados para destinos`;
+        ).innerHTML = `0 resultados para <b>Destinos</b>`;
         document.querySelector(
           "#div-pontos .swipper"
         ).innerHTML = `<div class="not-found">
@@ -87,7 +87,7 @@ const loadPage = () => {
 
         document.querySelector(
           "#text-pontos"
-        ).innerText = `${result.length} resultados para destinos`;
+        ).innerHTML = `${result.length} resultados para <b>Destinos</b>`;
         document.querySelector("#div-pontos .swipper").innerHTML = cards;
       }
     });
