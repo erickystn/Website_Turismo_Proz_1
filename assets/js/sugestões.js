@@ -80,6 +80,10 @@ const submitForm = (e) => {
 
             </h2>
         `;
+    document
+      .querySelector(".container-search-bar")
+      .scrollIntoView({ behavior: "smooth" });
+
     tempoRestante = 5;
     const intervalo = setInterval(() => {
       tempoRestante--;
