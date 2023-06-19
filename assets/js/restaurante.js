@@ -4,10 +4,8 @@ const loadPage = async () => {
   if (!url.searchParams.has("target") || !url.searchParams.get("target")) {
     window.location.replace("/");
   } else {
-
-
-   await generateRestaurantes()
-        .then((array) =>
+    await generateRestaurantes()
+      .then((array) =>
         buscaRestaurantes(array, Number(url.searchParams.get("target")), true)
       )
       .then((result) => {
@@ -19,14 +17,13 @@ const loadPage = async () => {
           "head"
         ).innerHTML += `<title>PARTIU | ${result.nome}</title>`;
 
-          const imgBanner = result.nome.replace(/ /g, "+");
+        const imgBanner = result.nome.replace(/ /g, "+");
 
-          createBanner(
-            `https://source.unsplash.com/random/1200x800/?${imgBanner}`,
-            result.nome,
-            ".container-banner-caption"
-          );
-
+        createBanner(
+          `https://source.unsplash.com/random/1200x800/?${imgBanner}`,
+          result.nome,
+          ".container-banner-caption"
+        );
 
         const sectionImages = `
                 <div class="a1">
@@ -60,9 +57,9 @@ const loadPage = async () => {
             </div>
           `;
 
-          document.querySelector(".b1").innerHTML = sectionSobre;
+        document.querySelector(".b1").innerHTML = sectionSobre;
 
-          document.querySelector(".b2-1").innerHTML = `
+        document.querySelector(".b2-1").innerHTML = `
             <p class="ol-title">
                 <strong>
                   Endereço:
@@ -71,7 +68,22 @@ const loadPage = async () => {
               </p>
           `;
 
-   });
+        let [, , cidade, uf] = result.localizacao.split(/\s*,\s*/);
+        cidade = cidade.replace(/ /g, "+");
+        uf = uf.replace(/ /g, "+");
+        console.log(cidade + "+" + uf);
+
+        document.querySelector(".b2-2").innerHTML = `<iframe
+                frameborder="0"
+                style="border: 0"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDP3aqslHPLq9_j9wKRBWKDT-kHsP1Yn48&q=${
+                  cidade + "+" + uf
+                }&zoom=10"
+                allowfullscreen
+              >
+              </iframe>`;
+      });
   }
 };
 

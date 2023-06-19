@@ -24,7 +24,9 @@ const paginar = async (numeroItemsPorPagina, paginaAtual) => {
 
   for (let i = paginaAtual - 1; i <= paginaAtual + 1; i++) {
     if (!(i > limiteDePaginas) && i != 0) {
-      pagination += `<button type="button" onclick="paginar(8,${i})" class="pagination-button ${i==paginaAtual? "pressed-button" :""}">${i}</button>`;
+      pagination += `<button type="button" onclick="paginar(8,${i})" class="pagination-button ${
+        i == paginaAtual ? "pressed-button" : ""
+      }">${i}</button>`;
     }
   }
 

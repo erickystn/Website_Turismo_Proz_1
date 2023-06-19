@@ -14,6 +14,7 @@ const loadPage = () => {
         }
 
         const imgBanner = result.nome.replace(/ /g, "+");
+        const localMapa = result.nome.replace(/\s+[-]\s+|\s+/g, "+");
 
         createBanner(
           `https://source.unsplash.com/random/1200x800/?${imgBanner}`,
@@ -64,6 +65,15 @@ const loadPage = () => {
           ${lista}
           </ol>`;
         document.querySelector(".b2-2").innerHTML = sectionLocomocao;
+
+        document.querySelector(".b2-1").innerHTML = `<iframe
+                frameborder="0"
+                style="border: 0"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDP3aqslHPLq9_j9wKRBWKDT-kHsP1Yn48&q=${localMapa}&zoom=10"
+                allowfullscreen
+              >
+              </iframe>`;
       });
   }
 };

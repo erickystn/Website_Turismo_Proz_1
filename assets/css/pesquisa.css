@@ -97,7 +97,7 @@ input:focus {
 }
 
 .not-found img {
-  width:clamp(20%,30%,35%);
+  width: clamp(20%, 30%, 35%);
 }
 
 #text-pontos,
@@ -177,7 +177,6 @@ input:focus {
   }
 
   .bar_input {
-
     height: 54px;
   }
 

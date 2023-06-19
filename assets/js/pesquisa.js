@@ -17,7 +17,6 @@ const loadPage = () => {
             />
           </div>`;
 
-
     return;
   }
   document.querySelector(".bar_input").value = url.searchParams.get("search");
@@ -25,8 +24,6 @@ const loadPage = () => {
   generateRestaurantes()
     .then((array) => buscaRestaurantes(array, url.searchParams.get("search")))
     .then((result) => {
-
-
       if (result == false) {
         document.querySelector(
           "#text-restaurantes"
@@ -38,12 +35,10 @@ const loadPage = () => {
               <h3>Não encontrado nenhum resultado nessa categoria</h3>
              </div>`;
         document.querySelector(".loader").classList.add("loader-none");
-
       } else {
         let cards = "";
 
         result.forEach((item) => {
-
           cards += createCard(
             item.fotos[0],
             item.nome,
@@ -64,8 +59,6 @@ const loadPage = () => {
   generateLocais()
     .then((array) => buscaLocais(array, url.searchParams.get("search")))
     .then((result) => {
-
-
       if (result == false) {
         document.querySelector(
           "#text-pontos"
@@ -80,7 +73,6 @@ const loadPage = () => {
         let cards = "";
 
         result.forEach((item) => {
-
           cards += createCard(
             item.fotos[0],
             item.nome,

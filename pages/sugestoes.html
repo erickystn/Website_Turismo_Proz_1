@@ -14,7 +14,11 @@
       src="https://kit.fontawesome.com/e8a034c4b7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon/ico.svg">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/images/favicon/ico.svg"
+    />
 
     <title>PARTIU! | SUGESTÕES</title>
   </head>
@@ -34,15 +38,16 @@
             <legend>Insira seus dados:</legend>
 
             <label for="name"
-              >Nome: <sup>*</sup> <input type="text" id="name" name="name"
-            /> <sup class="err-nome">Nome menor de 3 letras</sup></label>
+              >Nome: <sup>*</sup> <input type="text" id="name" name="name" />
+              <sup class="err-nome">Nome menor de 3 letras</sup></label
+            >
 
             <label for="email"
               >Email: <sup>*</sup>
 
-              <input type="text" id="email" name="email"
-            />  <sup class="err-email">Formato de email inválido</sup>
-          </label>
+              <input type="text" id="email" name="email" />
+              <sup class="err-email">Formato de email inválido</sup>
+            </label>
 
             <label for="sugestoes">Sugestões de lugares, restaurantes: </label>
 
@@ -50,7 +55,6 @@
               name="sugestaoText"
               id="sugestaoText"
               placeholder="Digite aqui informações sobre o local ou restaurante, pontos de interesses, pratos..."
-
             ></textarea>
             <span class="err-sugestao"> Mínimo 15 palavras não atingidas</span>
 
@@ -59,7 +63,11 @@
               receber notificações e novidades de nosso site.
             </label>
           </fieldset>
-          <div><span class="err-submit">* Um ou mais campos não foram preenchidos corretamente</span></div>
+          <div>
+            <span class="err-submit"
+              >* Um ou mais campos não foram preenchidos corretamente</span
+            >
+          </div>
 
           <input type="submit" id="submit" value="Enviar" />
         </form>
