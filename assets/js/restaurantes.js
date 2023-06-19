@@ -17,7 +17,7 @@ const paginar = async (numeroItemsPorPagina, paginaAtual) => {
       listaDeItems[i].fotos[0],
       listaDeItems[i].nome,
       listaDeItems[i].sobre.substring(0, 138) + "...",
-      "ponto",
+      "restaurante",
       listaDeItems[i].id
     );
   }
