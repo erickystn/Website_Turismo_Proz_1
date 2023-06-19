@@ -12,7 +12,6 @@
 
 body {
   display: none;
-
 }
 
 :root {
@@ -183,16 +182,18 @@ footer {
   height: 200px;
 }
 .banner-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #42a7c3;
-  font-size: clamp(20px, 25px, 28px);
+  font-size: 1.2rem;
   padding: 20px;
   border-radius: 0px 0px 30px 30px;
-  width: 24%;
-  max-width: 400px;
+  width: auto;
   color: #fff;
   text-align: center;
   font-weight: bold;
-  white-space: nowrap;
+  white-space: wrap;
   position: absolute;
   top: 90%;
   left: 50%;
@@ -308,13 +309,11 @@ footer {
 
   /* CSS do Banner para paginas que usam o Banner (mobile)- Lkz */
   .banner-caption {
-    top: 78%;
+    bottom: 0%;
     left: 50%;
-    width: 100%;
     min-width: 100%;
     max-width: 400px;
     border-radius: 0px;
-    padding: 10px;
   }
 }
 

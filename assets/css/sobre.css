@@ -245,7 +245,7 @@ main {
   .s-about-us {
     padding: 50px 10px 0 10px;
   }
-  svg {
+  svg.row-team, svg#setas-inversas {
     display: none;
   }
 
