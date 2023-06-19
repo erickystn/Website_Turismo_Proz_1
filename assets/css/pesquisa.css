@@ -15,13 +15,13 @@ main {
 }
 
 .search-bar_btn {
-  border:none;
+  border: none;
   width: 70%;
   display: flex;
 }
 
 .bar_input {
- border:none;
+  border: none;
   padding: 16px;
   padding-left: 25px;
   width: 100%;
@@ -42,24 +42,23 @@ main {
   width: 80px;
   height: 60px;
   border-radius: 0px 50px 50px 0px;
-  background-color: rgba(var(--primary-color),.7);
+  background-color: rgba(var(--primary-color), 0.7);
   border: none;
   box-shadow: 0px 1px 24px 0px #00000024;
 }
 
-.btn_search:hover{
+.btn_search:hover {
   cursor: pointer;
   background-color: rgba(var(--primary-color));
 }
 
-.fa-search:hover{
+.fa-search:hover {
   scale: 1.3;
-
 }
 
 .fa-search {
   font-size: 20px;
-  color: #FFF;
+  color: #fff;
 }
 
 input:focus {
@@ -67,7 +66,6 @@ input:focus {
 }
 
 /*CSS do container de resultados: */
-
 
 /* [2.3] CARDS CONTAINER (CONFIGURAÇÕES): */
 /* 2.0 Configurações do Card e Container: */
@@ -91,46 +89,50 @@ input:focus {
   justify-content: center;
 }
 
-.not-found{
+.not-found {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px 0;
 }
 
-.not-found img{
-  width: clamp(150px,20%,25%);
+.not-found img {
+  width:50%;
 }
 
-#text-pontos, #text-restaurantes{
+#text-pontos,
+#text-restaurantes {
   padding-left: 20px;
   font-size: 20px;
 }
 
-.empty-search{
+.empty-search {
   width: 100%;
- margin-bottom: 50px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
-.empty-search img{
-  width: 50%;
-  min-width: 420px;
+.empty-search img {
+  width: clamp(200px, 50%, 100%);
 }
-.empty-search h3{
+.empty-search h3 {
   color: #333;
   animation: color_change 1s infinite alternate;
-
 }
 @keyframes color_change {
-	0% { color: #333; }
-  60% { color: #42a7c3; }
-	100% { color: #42a7c3; }
+  0% {
+    color: #333;
+  }
+  60% {
+    color: #42a7c3;
+  }
+  100% {
+    color: #42a7c3;
+  }
 }
-
 
 .loader {
   border: 16px solid #f3f3f3; /* Light grey */
@@ -138,28 +140,31 @@ input:focus {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: spin 1s  infinite;
+  animation: spin 1s infinite;
   margin: 0 auto;
 }
 
-
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.loader-none{
+.loader-none {
   display: none;
 }
 
-#div-pontos{
+#div-pontos {
   margin-bottom: 100px;
 }
-#text-pontos, #text-restaurantes{
+#text-pontos,
+#text-restaurantes {
   padding-bottom: 10px;
   border-bottom: #3339 2px solid;
 }
-
 
 /* ====================================================== */
 @media only screen and (max-width: 800px) {
@@ -172,7 +177,7 @@ input:focus {
   }
 
   .bar_input {
-    min-width: 170px;
+
     height: 54px;
   }
 
@@ -181,7 +186,6 @@ input:focus {
   }
 
   /* [2.3] CARDS CONTAINER (CONFIGURAÇÕES): */
-
 
   /* [2.4] CTA DE TURISMO (CONFIGURAÇÕES): */
   .container-call {
@@ -210,11 +214,9 @@ input:focus {
     margin: 10px;
   }
 
-  .not-found{
+  .not-found {
     flex-direction: column;
     gap: 20px;
     text-align: center;
   }
-
-
 }

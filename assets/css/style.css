@@ -12,6 +12,7 @@
 
 body {
   display: none;
+
 }
 
 :root {
@@ -187,7 +188,6 @@ footer {
   padding: 20px;
   border-radius: 0px 0px 30px 30px;
   width: 24%;
-  min-width: 300px;
   max-width: 400px;
   color: #fff;
   text-align: center;
