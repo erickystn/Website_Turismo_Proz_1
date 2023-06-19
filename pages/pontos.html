@@ -16,7 +16,7 @@
   <!-- 3. Footer e Header -->
   <script src="/assets/js/createBanner.js"></script>
   <!-- 4. Banner e Legenda -->
-  <script src="/assets/js/createBusca.js" defer></script>
+
   <!-- 5. Campo de Busca -->
   <script src="/assets/js/createCTA.js"></script>
   <!-- 6. Call to Act -->
@@ -37,7 +37,18 @@
     <div class="container-banner-caption"></div>
     <div class="container">
       <!-- [2.2] - BARRA DE BUSCA -->
-      <div class="container-search-bar"></div>
+      <div class="container-search-bar"><form class="input-container" action="/pages/pesquisa.html" method="get">
+<fieldset class="search-bar_btn">
+  <input
+    class="bar_input"
+    id="search"
+    type="text"
+    name="search"
+    placeholder="Procure pelo seu próximo destino de viagem ou próximo prato..."
+  />
+  <button class="btn_search"><i class="fa fa-search"></i></button>
+</fieldset>
+</form></div>
       <!-- [2.3] - SEÇÃO DE CARDS PAGINADAS : /!\ -->
       <div class="container-cards">
         <div class="swipper"></div>
