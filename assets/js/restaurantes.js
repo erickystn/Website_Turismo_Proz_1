@@ -22,21 +22,19 @@ const paginar = async (numeroItemsPorPagina, paginaAtual) => {
     );
   }
 
-   for (let i = paginaAtual - 1; i <= paginaAtual + 1; i++) {
-     if (!(i > limiteDePaginas) && i != 0) {
-       pagination += `<button type="button" onclick="paginar(8,${i})" class="pagination-button ${
-         i == paginaAtual ? "pressed-button" : ""
-       }">${i}</button>`;
-     }
-   }
+  for (let i = paginaAtual - 1; i <= paginaAtual + 1; i++) {
+    if (!(i > limiteDePaginas) && i != 0) {
+      pagination += `<button type="button" onclick="paginar(8,${i})" class="pagination-button ${
+        i == paginaAtual ? "pressed-button" : ""
+      }">${i}</button>`;
+    }
+  }
 
-   document.querySelector(".swipper").innerHTML = cards;
-   document
-     .querySelector(".container-search-bar")
-     .scrollIntoView({ behavior: "smooth" });
+  document.querySelector(".swipper").innerHTML = cards;
+  document
+    .querySelector(".container-search-bar")
+    .scrollIntoView({ behavior: "smooth" });
   document.querySelector(".swiper-pagination").innerHTML = pagination;
-
-
 };
 
 paginar(8, 1);

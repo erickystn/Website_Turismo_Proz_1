@@ -60,7 +60,6 @@ const submitForm = (e) => {
     (sugestaoTexto.value.trim() || "A").match(regexSugestao).length >= 15;
 
   const checkForm = checkNome && checkEmail && checkSugestao;
-  console.log(checkForm);
 
   if (checkForm) {
     document.querySelector(".form-wrapper").innerHTML = `
@@ -80,9 +79,7 @@ const submitForm = (e) => {
 
             </h2>
         `;
-    document
-      .querySelector(".container-search-bar")
-      .scrollIntoView({ behavior: "smooth" });
+    document.querySelector(".banner").scrollIntoView({ behavior: "smooth" });
 
     tempoRestante = 5;
     const intervalo = setInterval(() => {
