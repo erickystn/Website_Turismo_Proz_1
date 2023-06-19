@@ -1,5 +1,5 @@
 .card {
-  width: clamp(400px, 48%, 500px);
+  width: clamp(350px, 48%, 500px);
   flex-shrink: 0;
   flex-grow: 0;
   height: fit-content;

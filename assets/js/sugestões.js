@@ -34,7 +34,7 @@ const sugestaoTexto = document.querySelector("#sugestaoText");
 const regexSugestao = /\S+/g;
 const sugestoesCheck = (e) => {
   const textoSemEspacos = e.target.value.trim() || "A";
-  console.log(textoSemEspacos.match(regexSugestao).length);
+ 
   if (textoSemEspacos.match(regexSugestao).length >= 15) {
     document.querySelector(".err-sugestao").classList.remove("error");
     sugestaoTexto.classList.remove("error-input");

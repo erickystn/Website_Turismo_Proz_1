@@ -1,17 +1,26 @@
+function removerAcentos(texto) {
+  return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
 const buscaLocais = (arrayList, target, buscaId = false) => {
   if (buscaId) {
     const index = arrayList.findIndex((elemento) => elemento.id === target);
     if (index === -1) return false;
-    
+
     return arrayList[index];
   }
 
   if (typeof target === "string") {
+    const targetWithoutAccents = removerAcentos(target.toLowerCase());
+
+
     return arrayList.filter(({ nome, pontos }) => {
-      if (nome.toLowerCase().includes(target.toLowerCase())) return true;
+      if (removerAcentos(nome.toLowerCase()).includes(targetWithoutAccents))
+        return true;
 
       for (const ponto of pontos)
-        if (ponto.toLowerCase().includes(target.toLowerCase())) return true;
+        if (removerAcentos(ponto.toLowerCase()).includes(targetWithoutAccents))
+          return true;
     });
   } else {
     throw new Error("Target não é uma string");
@@ -25,13 +34,20 @@ const buscaRestaurantes = (arrayList, target, buscaId = false) => {
     return arrayList[index];
   }
   if (typeof target === "string") {
+    const targetWithoutAccents = removerAcentos(target.toLowerCase());
+  
     return arrayList.filter(({ nome, localizacao, pratos }) => {
-      if (nome.toLowerCase().includes(target.toLowerCase())) return true;
+      if (removerAcentos(nome.toLowerCase()).includes(targetWithoutAccents))
+        return true;
 
-      if (localizacao.toLowerCase().includes(target.toLowerCase())) return true;
+      if (
+        removerAcentos(localizacao.toLowerCase()).includes(targetWithoutAccents)
+      )
+        return true;
 
       for (const prato of pratos)
-        if (prato.toLowerCase().includes(target.toLowerCase())) return true;
+        if (removerAcentos(prato.toLowerCase()).includes(targetWithoutAccents))
+          return true;
     });
   } else {
     throw new Error("Target não é uma string");

@@ -97,7 +97,7 @@ input:focus {
 }
 
 .not-found img {
-  width:50%;
+  width:clamp(20%,30%,35%);
 }
 
 #text-pontos,

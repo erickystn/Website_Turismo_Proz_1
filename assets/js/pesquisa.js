@@ -1,6 +1,9 @@
 const url = new URL(window.location.href);
 
 const loadPage = () => {
+  document.querySelector(
+    "head"
+  ).innerHTML += `<title>PARTIU | Pesquisa </title>`;
   if (!url.searchParams.has("search") || !url.searchParams.get("search")) {
     document.querySelector(".loader").classList.add("loader-none");
     document.querySelector(
@@ -14,7 +17,7 @@ const loadPage = () => {
             />
           </div>`;
 
-    console.log("Busca Vazia");
+
     return;
   }
   document.querySelector(".bar_input").value = url.searchParams.get("search");
@@ -22,7 +25,7 @@ const loadPage = () => {
   generateRestaurantes()
     .then((array) => buscaRestaurantes(array, url.searchParams.get("search")))
     .then((result) => {
-      console.log(result.length);
+
 
       if (result == false) {
         document.querySelector(
@@ -35,11 +38,12 @@ const loadPage = () => {
               <h3>Não encontrado nenhum resultado nessa categoria</h3>
              </div>`;
         document.querySelector(".loader").classList.add("loader-none");
+
       } else {
         let cards = "";
 
         result.forEach((item) => {
-          console.log(item.nome);
+
           cards += createCard(
             item.fotos[0],
             item.nome,
@@ -60,7 +64,7 @@ const loadPage = () => {
   generateLocais()
     .then((array) => buscaLocais(array, url.searchParams.get("search")))
     .then((result) => {
-      console.log(result);
+
 
       if (result == false) {
         document.querySelector(
@@ -76,7 +80,7 @@ const loadPage = () => {
         let cards = "";
 
         result.forEach((item) => {
-          console.log(item.nome);
+
           cards += createCard(
             item.fotos[0],
             item.nome,

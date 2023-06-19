@@ -4,7 +4,7 @@ const loadPage = async () => {
   if (!url.searchParams.has("target") || !url.searchParams.get("target")) {
     window.location.replace("/");
   } else {
-   
+
 
    await generateRestaurantes()
         .then((array) =>
@@ -13,7 +13,11 @@ const loadPage = async () => {
       .then((result) => {
         if (!result) {
           window.location.assign("/");
-          }
+        }
+
+        document.querySelector(
+          "head"
+        ).innerHTML += `<title>PARTIU | ${result.nome}</title>`;
 
           const imgBanner = result.nome.replace(/ /g, "+");
 
@@ -22,7 +26,7 @@ const loadPage = async () => {
             result.nome,
             ".container-banner-caption"
           );
-        console.log(result);
+
 
         const sectionImages = `
                 <div class="a1">
