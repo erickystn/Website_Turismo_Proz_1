@@ -34,3 +34,15 @@ generateLocais().then((element) => {
   }
   document.querySelector(".swipper").innerHTML = cards;
 });
+
+document
+  .querySelector("#section-restaurantes")
+  .addEventListener("click", () =>
+    window.location.assign("/pages/restaurantes.html")
+  );
+
+document
+  .querySelector("#section-pontos")
+  .addEventListener("click", () =>
+    window.location.assign("/pages/pontos.html")
+  );

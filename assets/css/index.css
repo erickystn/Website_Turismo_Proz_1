@@ -202,14 +202,18 @@ main {
   font-size: 1.3rem;
 }
 
+#section-restaurantes h2,
+#section-pontos h2 {
+  cursor: pointer;
+}
+
 /* CSS PARA TELA TAMANHO MEDIO P CARDS DESTINOS E RESTAURANTES */
 
 /* CSS MOBILE PARA O INDEX  */
 
 @media only screen and (max-width: 910px) {
   main {
-    padding: 8px;
-    min-width: 320px;
+    padding: 5px;
   }
 
   /* CSS MOBILE HERO */
@@ -222,7 +226,7 @@ main {
   }
   .hero-text > h2 {
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
   }
   .hero-text > p {
     font-size: 15px;

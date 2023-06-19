@@ -12,7 +12,6 @@
 
 body {
   display: none;
-  min-width: 500px;
 }
 
 :root {
@@ -51,9 +50,8 @@ a {
 .container {
   width: 100%;
   max-width: 1246px;
-  min-width: 500px;
   margin: 0 auto;
-  padding: 0px 15px;
+  padding: 0px;
 }
 
 header {
@@ -91,10 +89,10 @@ header {
   color: #333;
 }
 
-.menu li a:hover{
+.menu li a:hover {
   color: #42a7c3;
 }
-.menu li a img:hover{
+.menu li a img:hover {
   scale: 1.2;
 }
 
@@ -129,7 +127,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width:60% ;
+  width: 60%;
 }
 
 .about-us-footer h3 {
@@ -147,7 +145,7 @@ footer {
 }
 
 .members-footer img {
-max-width: 20%;
+  max-width: 20%;
   aspect-ratio: 4/4;
 
   padding: 10px;
@@ -166,7 +164,7 @@ max-width: 20%;
   font-weight: bold;
 }
 .menu-footer a:hover {
- text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* CSS do Banner para paginas que usam o Banner */
@@ -284,19 +282,16 @@ max-width: 20%;
   .footer > * {
     margin-top: 20px;
   }
-  .about-us-footer figure{
+  .about-us-footer figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 
-  .members-footer img{
+  .members-footer img {
     min-width: 100px;
   }
-
-
 
   .menu-footer {
     display: none;

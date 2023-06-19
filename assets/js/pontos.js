@@ -1,17 +1,38 @@
-generateLocais().then((element) => {
+const paginar = async (numeroItemsPorPagina, paginaAtual) => {
   let cards = "";
- 
-  let final;
-  if (element.length < 9) final = element.length;
-  else final = 9;
-  for (let index = 0; index < final; index++) {
+  let pagination = "";
+  const listaDeItems = await generateLocais();
+
+  const limiteDePaginas = Math.ceil(listaDeItems.length / numeroItemsPorPagina); //limite de paginas que podem ser geradas
+
+  let itemLimite = paginaAtual * numeroItemsPorPagina;
+
+  const itemInicial = itemLimite - numeroItemsPorPagina;
+
+  if (itemLimite > listaDeItems.length) {
+    itemLimite = listaDeItems.length;
+  }
+  for (let i = itemInicial; i < itemLimite; i++) {
     cards += createCard(
-      element[index].fotos[0],
-      element[index].nome,
-      element[index].sobre.substring(0, 138) + "...",
+      listaDeItems[i].fotos[0],
+      listaDeItems[i].nome,
+      listaDeItems[i].sobre.substring(0, 138) + "...",
       "ponto",
-      element[index].id
+      listaDeItems[i].id
     );
   }
+
+  for (let i = paginaAtual - 1; i <= paginaAtual + 1; i++) {
+    if (!(i > limiteDePaginas) && i != 0) {
+      pagination += `<button type="button" onclick="paginar(8,${i})" class="pagination-button ${i==paginaAtual? "pressed-button" :""}">${i}</button>`;
+    }
+  }
+
   document.querySelector(".swipper").innerHTML = cards;
-});
+  document
+    .querySelector(".container-search-bar")
+    .scrollIntoView({ behavior: "smooth" });
+  document.querySelector(".swiper-pagination").innerHTML = pagination;
+};
+
+paginar(8, 1);

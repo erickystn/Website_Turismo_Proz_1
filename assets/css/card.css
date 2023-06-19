@@ -73,6 +73,9 @@
   padding: 0px 20px;
   color: rgb(var(--secondary-color));
 }
+.card:hover {
+  background-color: rgba(51, 51, 51, 0.1);
+}
 
 .card-titulo {
   padding: 10px 0px;
@@ -109,7 +112,6 @@
 }
 
 @media screen and (max-width: 560px) {
- 
   .card {
     width: 100%;
     height: fit-content;
@@ -134,13 +136,12 @@
     overflow: hidden;
   }
 
-
   /* 2.2 Configurações do body do card: */
   .card-body {
     width: 70%;
     height: 503px;
     overflow: hidden;
-    padding: 20px ;
+    padding: 20px;
     padding-bottom: 0;
     color: rgb(var(--secondary-color));
   }

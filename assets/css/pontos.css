@@ -65,25 +65,7 @@ input:focus {
   outline: none;
 }
 
-/* [2.3] CARDS CONTAINER (CONFIGURAÇÕES): */
-/* 2.0 Configurações do Card e Container: */
 
-.swiper-pagination {
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  user-select: none;
-}
-
-.swiper-pagination img {
-  height: 40px;
-  -webkit-user-drag: none;
-}
-
-/* .card:hover {
-    transform: scale3d(1.1, 1.1, 1);
-} */
 
 /* 2.1 Configurações do header do card: */
 .card-header {

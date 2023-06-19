@@ -4,8 +4,6 @@ const loadPage = () => {
   if (!url.searchParams.has("target") || !url.searchParams.get("target")) {
     window.location.replace("/");
   } else {
-
-
     generateLocais()
       .then((array) =>
         buscaLocais(array, Number(url.searchParams.get("target")), true)
@@ -17,11 +15,11 @@ const loadPage = () => {
 
         const imgBanner = result.nome.replace(/ /g, "+");
 
-          createBanner(
-            `https://source.unsplash.com/random/1200x800/?${imgBanner}`,
-            result.nome,
-            ".container-banner-caption"
-          );
+        createBanner(
+          `https://source.unsplash.com/random/1200x800/?${imgBanner}`,
+          result.nome,
+          ".container-banner-caption"
+        );
 
         const sectionImages = `
                 <div class="a1">
