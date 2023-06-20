@@ -13,10 +13,11 @@ const buscaLocais = (arrayList, target, buscaId = false) => {
   if (typeof target === "string") {
     const targetWithoutAccents = removerAcentos(target.toLowerCase());
 
-    return arrayList.filter(({ nome, pontos }) => {
+    return arrayList.filter(({ nome, pontos, sigla }) => {
       if (removerAcentos(nome.toLowerCase()).includes(targetWithoutAccents))
         return true;
-
+      if (removerAcentos(sigla.toLowerCase()).includes(targetWithoutAccents))
+        return true;
       for (const ponto of pontos)
         if (removerAcentos(ponto.toLowerCase()).includes(targetWithoutAccents))
           return true;
@@ -35,8 +36,11 @@ const buscaRestaurantes = (arrayList, target, buscaId = false) => {
   if (typeof target === "string") {
     const targetWithoutAccents = removerAcentos(target.toLowerCase());
 
-    return arrayList.filter(({ nome, localizacao, pratos }) => {
+    return arrayList.filter(({ nome, localizacao, pratos, estado }) => {
       if (removerAcentos(nome.toLowerCase()).includes(targetWithoutAccents))
+        return true;
+
+      if (removerAcentos(estado.toLowerCase()).includes(targetWithoutAccents))
         return true;
 
       if (
