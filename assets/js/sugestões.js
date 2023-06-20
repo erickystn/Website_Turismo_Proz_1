@@ -60,7 +60,7 @@ const submitForm = (e) => {
     (sugestaoTexto.value.trim() || "A").match(regexSugestao).length >= 15;
 
   const checkForm = checkNome && checkEmail && checkSugestao;
-
+  tempoRestante = 10;
   if (checkForm) {
     document.querySelector(".form-wrapper").innerHTML = `
             <h2 style="text-align: center;" class="description">
@@ -72,7 +72,7 @@ const submitForm = (e) => {
 
 
 
-            Em <span id="contador">5</span> segundos, você será redirecionado para nossa página Inicial.
+            Em <span id="contador">${tempoRestante}</span> segundos, você será redirecionado para nossa página Inicial.
             <br>
             Se isso não ocorrer, <a style=" color: #42a7c3;" href="/">clique aqui! </a>
 
@@ -81,7 +81,6 @@ const submitForm = (e) => {
         `;
     document.querySelector(".banner").scrollIntoView({ behavior: "smooth" });
 
-    tempoRestante = 5;
     const intervalo = setInterval(() => {
       tempoRestante--;
       document.querySelector("#contador").innerHTML = tempoRestante;
