@@ -42,7 +42,7 @@ main {
 }
 
 .figure-hero > img {
-  max-width: 100%;
+  width: 100%;
 }
 
 /* CSS DO SEARCH */
@@ -215,10 +215,20 @@ main {
   /* CSS MOBILE HERO */
   .section-hero {
     flex-direction: column-reverse;
+    align-items: center;
+    gap:30px;
     padding: 0;
+    margin: 50px auto;
+    width: 90%;
   }
   .hero-text {
+    flex-shrink: 2;
     padding: 0;
+    width: 100%;
+  }
+  .hero-img{
+  padding-top: 50px;
+  width: 80%;
   }
   .hero-text > h2 {
     width: 100%;
@@ -229,15 +239,25 @@ main {
     width: 100%;
   }
 
+  .hero-img, .hero-text{
+    max-width: 100%;
+    padding: 0px 10px;
+    text-align: center;
+  }
+
   /* CSS MOBILE PESQUISA */
   .section-search {
-    height: 500px;
+    height: 550px;
     margin-top: 0;
     align-items: flex-start;
   }
 
+  .form-search{
+    height: 30%;
+  }
   .form {
-    width: 70%;
+    width: 90%;
+    height: 80%;
   }
   .form-search input {
     width: 70%;
@@ -245,8 +265,8 @@ main {
     font-size: 2.5vw;
   }
   .form-search button {
-    min-width: 70px;
-    min-height: 70px;
+     width:20%;
+    height: 70px;
     /* width: 20%;
      height: 50%;; */
   }
@@ -324,10 +344,10 @@ main {
 
 @media only screen and (max-width: 600px) {
   .form-search input {
-    width: 85%;
+    width: 70%;
     font-size: 20px;
   }
   .form-search button {
-    width: 15%;
+    width: 20%;
   }
 }
