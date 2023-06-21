@@ -3,7 +3,7 @@ generateRestaurantes().then((element) => {
 
   let cards = "";
 
-  const final = 4;
+  const final = 3;
 
   for (let index = 0; index < final; index++) {
     cards += createCard(
@@ -22,7 +22,7 @@ generateLocais().then((element) => {
 
   let cards = "";
 
-  const final = 4;
+  const final = 3;
   for (let index = 0; index < final; index++) {
     cards += createCard(
       arrayShuffle[index].fotos[0],
