@@ -16,12 +16,6 @@ const loadPage = () => {
         const imgBanner = result.nome.replace(/ /g, "+");
         const localMapa = result.nome.replace(/\s+[-]\s+|\s+/g, "+");
 
-        createBanner(
-          `https://source.unsplash.com/random/1200x800/?${imgBanner}`,
-          result.nome,
-          ".container-banner-caption"
-        );
-
         const sectionImages = `
                 <div class="a1">
             <img src="${result.fotos[0]}" alt="">
@@ -36,11 +30,17 @@ const loadPage = () => {
           </div>
            `;
         document.querySelector(".container-a").innerHTML = sectionImages;
+        createBanner(
+          `${result.fotos[3]}`,
+          result.nome,
+          ".container-banner-caption"
+        );
 
         let lista = "";
         for (const content of result.pontos) {
           lista += `<li> ${content}</li>`;
         }
+
         const sectionSobre = `
             <div class="b1-1">
               <p>

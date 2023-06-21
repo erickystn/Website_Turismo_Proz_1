@@ -20,7 +20,7 @@ const loadPage = async () => {
         const imgBanner = result.nome.replace(/ /g, "+");
 
         createBanner(
-          `https://source.unsplash.com/random/1200x800/?${imgBanner}`,
+          `https://source.unsplash.com/random/560x400/?restaurant`,
           result.nome,
           ".container-banner-caption"
         );
