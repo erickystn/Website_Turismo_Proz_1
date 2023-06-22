@@ -63,6 +63,9 @@ const submitForm = (e) => {
   tempoRestante = 10;
   if (checkForm) {
     document.querySelector(".form-wrapper").innerHTML = `
+           <div class="loader">Partiu!</div>
+
+
             <h2 style="text-align: center;" class="description">
 
             Seu formulário foi enviado!
