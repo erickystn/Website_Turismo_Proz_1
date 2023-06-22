@@ -126,6 +126,9 @@ const footer = `
 `;
 
 document.querySelector("footer").innerHTML = footer;
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
 
 setTimeout(function () {
   document.getElementsByTagName("body")[0].style.display = "block";
