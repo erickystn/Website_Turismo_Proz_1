@@ -1,7 +1,8 @@
 // Tratando o input Nome
+const regexNome = /^[A-Za-z]+(?:\s+[A-Za-z]+)*\s*$/;
 const nome = document.querySelector("#name");
 const nomeCheck = (e) => {
-  if (e.target.value.length < 3) {
+  if (e.target.value.length < 3 || !regexNome.test(e.target.value)) {
     if (!document.querySelector(".err-nome").classList.contains("error")) {
       document.querySelector(".err-nome").classList.add("error");
       nome.classList.add("error-input");
@@ -15,6 +16,7 @@ nome.addEventListener("blur", nomeCheck);
 
 // Tratando o input email
 const email = document.querySelector("#email");
+
 const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const emailCheck = (e) => {
   if (!regexEmail.test(e.target.value)) {
@@ -104,8 +106,8 @@ const submitForm = (e) => {
 form.addEventListener("submit", submitForm);
 
 //Variaveis para pagina iniciar carregada de info
-nome.value = "Ana Sperantto";
-email.value = "ana_ana@live.com";
-sugestaoTexto.value = `Olá equipe do Blog Partiu!, gostaria de sugerir o incrível restaurante "Sabor Brasileiro"
-localizado na encantadora cidade de Paraty, Brasil. A culinária é uma verdadeira viagem pelos sabores do país,
-com pratos típicos e ingredientes frescos. Recomendo provar a feijoada e a caipirinha, autênticos e deliciosos.`;
+// nome.value = "Ana Sperantto";
+// email.value = "ana_ana@live.com";
+// sugestaoTexto.value = `Olá equipe do Blog Partiu!, gostaria de sugerir o incrível restaurante "Sabor Brasileiro"
+// localizado na encantadora cidade de Paraty, Brasil. A culinária é uma verdadeira viagem pelos sabores do país,
+// com pratos típicos e ingredientes frescos. Recomendo provar a feijoada e a caipirinha, autênticos e deliciosos.`;
