@@ -22,7 +22,9 @@ const loadPage = () => {
   document.querySelector(".bar_input").value = url.searchParams.get("search");
 
   generateRestaurantes()
-    .then((array) => buscaRestaurantes(array, url.searchParams.get("search")))
+    .then((array) =>
+      buscaRestaurantes(array, url.searchParams.get("search").trim())
+    )
     .then((result) => {
       if (result == false) {
         document.querySelector(
@@ -57,7 +59,7 @@ const loadPage = () => {
     });
 
   generateLocais()
-    .then((array) => buscaLocais(array, url.searchParams.get("search")))
+    .then((array) => buscaLocais(array, url.searchParams.get("search").trim()))
     .then((result) => {
       if (result == false) {
         document.querySelector(
