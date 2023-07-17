@@ -105,9 +105,9 @@ const submitForm = (e) => {
 };
 form.addEventListener("submit", submitForm);
 
-//Variaveis para pagina iniciar carregada de info
-// nome.value = "Ana Sperantto";
-// email.value = "ana_ana@live.com";
-// sugestaoTexto.value = `Olá equipe do Blog Partiu!, gostaria de sugerir o incrível restaurante "Sabor Brasileiro"
-// localizado na encantadora cidade de Paraty, Brasil. A culinária é uma verdadeira viagem pelos sabores do país,
-// com pratos típicos e ingredientes frescos. Recomendo provar a feijoada e a caipirinha, autênticos e deliciosos.`;
+// Variaveis para pagina iniciar carregada de info
+nome.value = "Ana Sperantto";
+email.value = "ana_ana@live.com";
+sugestaoTexto.value = `Olá equipe do Blog Partiu!, gostaria de sugerir o incrível restaurante "Sabor Brasileiro"
+localizado na encantadora cidade de Paraty, Brasil. A culinária é uma verdadeira viagem pelos sabores do país,
+com pratos típicos e ingredientes frescos. Recomendo provar a feijoada e a caipirinha, autênticos e deliciosos.`;

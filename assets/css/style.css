@@ -14,6 +14,18 @@ body {
   display: none;
 }
 
+.to-top {
+  background-color: #fff;
+  border: #42a7c3 1px solid;
+  border-radius: 30px;
+  padding: 10px;
+  position: fixed;
+  bottom:2%;
+  right: 2%;
+  z-index: 10;
+  cursor: pointer;
+}
+
 :root {
   --primary-color: 66, 167, 195;
   --secondary-color: 51, 51, 51;
