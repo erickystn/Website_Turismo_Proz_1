@@ -5,6 +5,10 @@ Olá, somos o grupo 1 e este repositório apresentamos o site do nosso projeto, 
 para pessoas que queiram descobrir novos lugares para viajar e também temos indicações de restaurantes onde os viajantes podem degustar o melhor da culinária
 ao redor do Brasil!
 
+## Acesso ao Site 
+
+https://website-turismo-proz.vercel.app/
+
 ## Membros da equipe
 <hr>
 
