@@ -1,7 +1,7 @@
 <h1 align = "center">  ✈ Projeto Site Partiu! 🧳
 </h1>
 
-O projeto do site foi concebido simular um site que oferece indicações de pontos turísticos
+O intuito desse projeto é simular um site que oferece indicações de pontos turísticos
 para pessoas que queiram descobrir novos lugares para viajar e também indicações de restaurantes onde os viajantes podem comer em varios lugares do Brazil
 
 ## Acesso ao Site 
