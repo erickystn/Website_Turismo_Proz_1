@@ -2,7 +2,7 @@
 </h1>
 
 O intuito desse projeto é simular um site que oferece indicações de pontos turísticos
-para pessoas que queiram descobrir novos lugares para viajar e também indicações de restaurantes onde os viajantes podem comer em varios lugares do Brazil
+para pessoas que queiram descobrir novos lugares para viajar e também indicações de restaurantes onde os viajantes podem comer em varios lugares do Brasil!
 
 ## Acesso ao Site 
 
