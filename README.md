@@ -39,7 +39,5 @@ Foi solicitado que o site fosse feito somente com as tecnologias base da program
 ### Pesquisa
 <img width="25%" src="./assets/images/designs/Pesquisa Result.png">
 
-### Sobre Nós
-<img width="25%" src="./assets/images/designs/Sobre Nos.png">
 
 
