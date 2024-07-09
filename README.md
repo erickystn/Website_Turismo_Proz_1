@@ -1,4 +1,4 @@
-<h1 align = "center">  ✈ Projeto Integrador 🧳
+<h1 align = "center">  ✈ Projeto Site Partiu! 🧳
 </h1>
 
 O projeto do site foi concebido simular um site que oferece indicações de pontos turísticos
