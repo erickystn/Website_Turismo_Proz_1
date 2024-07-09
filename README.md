@@ -1,72 +1,19 @@
-<h1 align = "center">  ✈ Projeto Integrador da turma 7A da Proz - Grupo 1 🧳
+<h1 align = "center">  ✈ Projeto Integrador 🧳
 </h1>
 
-Olá, somos o grupo 1 e este repositório apresentamos o site do nosso projeto, que tem o nome de Partiu!. O site foi concebido visando oferecer indicações de pontos turísticos
-para pessoas que queiram descobrir novos lugares para viajar e também temos indicações de restaurantes onde os viajantes podem degustar o melhor da culinária
-ao redor do Brasil!
+O projeto do site foi concebido simular um site que oferece indicações de pontos turísticos
+para pessoas que queiram descobrir novos lugares para viajar e também indicações de restaurantes onde os viajantes podem comer em varios lugares do Brazil
 
 ## Acesso ao Site 
 
 https://website-turismo-proz.vercel.app/
 
-## Membros da equipe
-<hr>
+## Tecnologias Utilizadas
 
-- Erick Carlos Lopes Santana Braga
-
-<p align='center'>
-  <a href="https://github.com/erickystn" target="_blank">
-    <img align="left" src="https://img.shields.io/badge/Github-423f6d?style=for-the-badge&logo=github&logoColor=753ed2" />
-  </a>&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/erickystn" target="_blank">
-    <img align="left" src="https://img.shields.io/badge/LinkedIN-423f6d?style=for-the-badge&logo=linkedin&logoColor=753ed2" />
-  </a>&nbsp;&nbsp;
-</p>
-
-- Jéssica Almeida
-
-<p align='center'>
-  <a href="https://github.com/Jessica-Almeida" target="_blank">
-    <img align="left" src="https://img.shields.io/badge/Github-423f6d?style=for-the-badge&logo=github&logoColor=753ed2" />
-  </a>&nbsp;&nbsp;
-  <a href="#" target="_blank">
-    <img align="left" src="https://img.shields.io/badge/LinkedIN-423f6d?style=for-the-badge&logo=linkedin&logoColor=753ed2" />
-  </a>&nbsp;&nbsp;
-</p>
-
-- Karen Carvalho
-
-<p align='center'>
-  <a href="https://github.com/KARENTAVARESCARVALHO" target="_blank">
-    <img align="left" src="https://img.shields.io/badge/Github-423f6d?style=for-the-badge&logo=github&logoColor=753ed2" />
-  </a>&nbsp;&nbsp;
-  <a  href="#" target="_blank">
-    <img align="left" src="https://img.shields.io/badge/LinkedIN-423f6d?style=for-the-badge&logo=linkedin&logoColor=753ed2" />
-  </a>&nbsp;&nbsp;
-</p>
-
-- Edna Carvalho
-
-<p align='center'>
-  <a href="https://github.com/meuusuario2000" target="_blank">
-    <img align="left" src="https://img.shields.io/badge/Github-423f6d?style=for-the-badge&logo=github&logoColor=753ed2" />
-  </a>&nbsp;&nbsp;
-  <a href="#" target="_blank">
-    <img align="left" src="https://img.shields.io/badge/LinkedIN-423f6d?style=for-the-badge&logo=linkedin&logoColor=753ed2" />
-  </a>&nbsp;&nbsp;
-</p>
-
-- Lucas Rodrigues
-
-<p align='center'>
-  <a href="https://github.com/Lukaz780" target="_blank">
-    <img align="left" src="https://img.shields.io/badge/Github-423f6d?style=for-the-badge&logo=github&logoColor=753ed2" />
-  </a>&nbsp;&nbsp;
-  <a href="#" target="_blank">
-    <img align="left" src="https://img.shields.io/badge/LinkedIN-423f6d?style=for-the-badge&logo=linkedin&logoColor=753ed2" />
-  </a>&nbsp;&nbsp;
-</p>
-<br>
+Foi solicitado que o site fosse feito somente com as tecnologias base da programação web:
+* HTML
+* CSS
+* Javascript
 
 ## Design do Projeto
 <hr/>
